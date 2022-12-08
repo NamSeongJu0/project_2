@@ -7,30 +7,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
     <link rel="stylesheet" href="cssfile/index.css">
     <link rel="stylesheet" href="cssfile/common.css">
+    <script src="jsfile/index.js"></script>
+
 </head>
 
 <body>
+    <div id="wrap">
+        <!-- 헤더 부분 -->
+        <header>
+            <div class="small">
+                <img src="indeximg/logo.png" alt="">
+                <img src="indeximg/menubar.png" class="a">
+            </div>
 
-    <!-- 헤더 부분 -->
-    <header>
+            <nav class="b">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li class="blog"><a href="#">BLOG</a>
+                        <ul class="subblog">
+                            <li><a>Blog</a></li>
+                            <li><a>Blog Details</a></li>
+                            <li><a>Element</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">CONTACT NOW</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <div class="small">
-            <div class="logo">LOGGER</div>
-            <img src="img/i.png" class="a">
+        <!-- 배경이미에 글자 넣기-->
+
+        <!-- 텍스트 정렬 -->
+        <div id="slider">
+            <div class="text">
+
+                <p>CREATIVE PHOTOGRAPHEY</p>
+                <h1>PHOTOGRAPHY<br>MAKE US HAPPY<br> TAKE A SHOT.</h1>
+                <p><a href="#">WATCH PORTFOLIO</a></p>
+
+            </div>
+
         </div>
 
-        <nav class="b">
-            <ul>
-                <li><a href="#">TOP</a></li>
-                <li><a href="#">콘텐츠</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">문의</a></li>
-            </ul>
-        </nav>
+        <!-- section 부분 -->
+        <div id="section">
+            <div class="container">
 
-    </header>
+                <div id="contents">
+                    <div class="contents">
+                        <h2>
+                            HOW WE MAKE<br>USER EXPERIENCES
+                        </h2>
+                        <a href="#">NamSeongJu@naver.com</a>
+                    </div>
+
+                    <div class="contents">
+                        <p>You can’t use up creativity. The more you use, the<br> more you have in your signifant mind.
+                        </p><br><br>
+                        <p>
+                            SALVADOR DALI<br>
+                            Digital Artisit
+                        </p><br><br>
+                        <p><span>05</span>YEARS OF<br>DIGITAL EXPERIENCE</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 컨셉 사진 시작 -->
+        <div id="conceptimg">
+            <div class="container">
+
+                <div class="profile">
+                    
+                    <img src="indeximg/pf1.jpg" alt="프로필 사진1">
+                    <img src="indeximg/pf3.jpg" alt="프로필 사진2">
+                    <img src="indeximg/pf2.jpg" alt="프로필 사진3">
+                    <img src="indeximg/pf4.jpg" alt="프로필 사진4">
+
+                    <div class="information">
+                        <p>설명</p>
+                    </div>
+                </div>
+
+                <div class="bodyprofile">
+                    <img src="indeximg/bf2" alt="바디 프로필 사진1">
+                    <img src="indeximg/bf1.jpg" alt="바디 프로필 사진2">
+                    <img src="indeximg/cbf1.jpg" alt="바디 프로필 사진3">
+                    <img src="indeximg/cbf2.jpg" alt="바디 프로필 사진4">
+
+                    <div class="information">
+                        <p>설명</p>
+                    </div>
+                </div>
+
+                <div class="concept">
+                    <img src="" alt="컨셉 사진1">
+                    <img src="" alt="컨셉 사진2">
+
+                    <div class="information">
+                        <p>설명</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    </div>
 </body>
 
 </html>
