@@ -14,7 +14,7 @@
     margin: 0 auto;
     padding: 0 15px 0 15px;
     border: 1px solid orange;
-    background-color: wheat;
+    background-color: #666;
 }
 
 
@@ -132,12 +132,13 @@
     text-align: center;
     font-size: 3.5em;
     color: white;
+    margin-bottom: 30px;
 }
 
 /* 프로필 사진 */
-.profile {
+.wdphotography {
     width: 100%;
-    height: 800px;
+    height: 750px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -145,22 +146,22 @@
     margin: 0 0 30px 0;
 }
 
-.profile img {
+.wdphotography img {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.profile .information p {
+.wdphotography .information p {
     position: absolute;
     right: 25%;
 }
 
 
 /* 바디프로필 사진 */
-.bodyprofile {
+.ntphotography {
     width: 100%;
-    height: 800px;
+    height: 750px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -168,57 +169,70 @@
     margin: 100px 0;
 }
 
-.bodyprofile img {
+.ntphotography img {
     position: absolute;
     top: 0;
     right: 0;
 }
 
-.bodyprofile .information p {
+.ntphotography .information p {
     position: absolute;
     left: 25%;
 }
 
 
 /* 컨셉 사진 */
-.concept {
+.crphotography {
     width: 100%;
-    height: 800px;
+    height: 750px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
 
-.concept img {
+.crphotography img {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.concept .information p {
+.crphotography .information p {
     position: absolute;
     right: 25%;
 }
 
 
 /* 반려동물 */
+#animals .container h1 {
+    text-align: center;
+    font-size: 3.5em;
+    color: white;
+    margin-bottom: 30px;
+}
+
 .dogcat {
     width: 100%;
     height: 800px;
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
 
-.dogcat img {
+.dc {
+    box-sizing: border-box;
+    display: flex;
+
+}
+
+/* .dogcat img {
     position: absolute;
     top: 0;
     left: 0;
-}
+} */
 
-.dogcat .information p {
-    position: absolute;
-    right: 25%;
+.dogcat .information {
+    display: flex;
+    justify-content: space-around;
 }
