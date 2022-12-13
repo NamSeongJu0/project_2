@@ -14,7 +14,7 @@
     margin: 0 auto;
     padding: 0 15px 0 15px;
     border: 1px solid orange;
-    background-color: #666;
+    background-color: #333;
 }
 
 
@@ -52,7 +52,7 @@
 }
 
 #slider .text h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     text-align: center;
     color: #eee;
     letter-spacing: 10px;
@@ -68,9 +68,9 @@
 
 #slider .text p a {
     border-radius: 20px;
-    background-color: #fff;
-    opacity: 0.6;
-    color: #666;
+    background-color: #aaa;
+    opacity: 0.8;
+    color: white;
     padding: 10px 20px;
 }
 
@@ -92,36 +92,65 @@
 }
 
 
+/* 섹션 부분 */
 #section {
+    background-image: url('../indeximg/bgi.png');
+    background-repeat: no-repeat;
     width: 100%;
     height: 500px;
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.95);
+    background-position: right bottom;
 }
+
 #contents {
+    height: 300px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 9%;
 }
 
 #contents .contents h2 {
-    font-size: 3em;
+    font-size: 3.5em;
     color: white;
 }
 
 #contents .contents a{
     color: red;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 #contents .contents a:hover {
     text-decoration: underline;
 }
 
+#contents .contents .years {
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+#contents .contents .years .year span {
+    color: white;
+    font-size: 3.5rem;
+    padding-right: 30px;
+    font-weight: bold;
+}
+
+#contents .contents .years .year1 p {
+    margin-top: 9px;
+}
+
+#contents .contents p {
+    color: white;
+    font-size: 1rem;
+}
+
 
 /* 컨셉 사진 */
 #conceptimg {
     width: 100%;
-    height: 3000px;
+    height: 3500px;
     background-color: black;
 }
 
@@ -132,10 +161,10 @@
     text-align: center;
     font-size: 3.5em;
     color: white;
-    margin-bottom: 30px;
+    margin: 60px 0 60px 0;
 }
 
-/* 프로필 사진 */
+/* 웨딩 사진 */
 .wdphotography {
     width: 100%;
     height: 750px;
@@ -143,13 +172,32 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin: 0 0 30px 0;
 }
 
 .wdphotography img {
     position: absolute;
-    top: 0;
-    left: 0;
+}
+
+.wd1 {
+    z-index: 1;
+}
+
+.wd2 {
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.wd3 {
+    top: 100px;
+    left: 100px;
+    z-index: 3;
+}
+
+.wd4 {
+    top: 150px;
+    left: 150px;
+    z-index: 4;
 }
 
 .wdphotography .information p {
@@ -158,7 +206,7 @@
 }
 
 
-/* 바디프로필 사진 */
+/* 네이처 사진 */
 .ntphotography {
     width: 100%;
     height: 750px;
@@ -166,13 +214,38 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin: 100px 0;
 }
 
 .ntphotography img {
     position: absolute;
+}
+
+.nt1 {
+    z-index: 1;
     top: 0;
     right: 0;
+}
+
+.nt2 {
+    top: 50px;
+    right: 50px;
+    z-index: 2;
+}
+
+.nt3 {
+    top: 100px;
+    right: 100px;
+    z-index: 3;
+}
+
+.nt4 {
+    top: 150px;
+    right: 150px;
+    z-index: 4;
+}
+
+#conceptimg .container .na {
+    margin: 200px 0 60px 0;
 }
 
 .ntphotography .information p {
@@ -181,7 +254,7 @@
 }
 
 
-/* 컨셉 사진 */
+/* 창의적인 사진 */
 .crphotography {
     width: 100%;
     height: 750px;
@@ -193,8 +266,32 @@
 
 .crphotography img {
     position: absolute;
-    top: 0;
-    left: 0;
+}
+
+.cr1 {
+    z-index: 1;
+}
+
+.cr2 {
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.cr3 {
+    top: 100px;
+    left: 100px;
+    z-index: 3;
+}
+
+.cr4 {
+    top: 150px;
+    left: 150px;
+    z-index: 4;
+}
+
+#conceptimg .container .cr {
+    margin: 200px 0 60px 0;
 }
 
 .crphotography .information p {
@@ -203,36 +300,33 @@
 }
 
 
-/* 반려동물 */
-#animals .container h1 {
+/* 라이트페인팅 */
+
+#LightPainting {
+    width: 100%;
+    height: 4250px;
+    background-image: url('../indeximg/bgi1.png');
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.95);  
+}
+
+#LightPainting .container h1 {
     text-align: center;
     font-size: 3.5em;
     color: white;
     margin-bottom: 30px;
 }
 
-.dogcat {
-    width: 100%;
-    height: 800px;
-    /* display: flex; */
-    justify-content: space-between;
-    align-items: center;
+#LightPainting .container .light .lt {
     position: relative;
+    text-align: center;
 }
 
-.dc {
-    box-sizing: border-box;
-    display: flex;
-
+#LightPainting .container .light .lt img {
+    height: 750px;
+    position: sticky;
+    top: 0px;
+    
 }
 
-/* .dogcat img {
-    position: absolute;
-    top: 0;
-    left: 0;
-} */
 
-.dogcat .information {
-    display: flex;
-    justify-content: space-around;
-}

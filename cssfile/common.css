@@ -1,10 +1,15 @@
 @charset "utf-8";
 
+/* 폰트 */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
 /* 헤더 부분 */
 
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 a {
@@ -22,7 +27,7 @@ ol {
 
 header {
     position: sticky;
-    top: 0;
+    top: 0px;
     width: 100%;
     height: 50px;
     background-color: black;
@@ -30,6 +35,35 @@ header {
     height: 70px;
     opacity: 0.9;
     z-index: 5;
+}
+
+.smallimg {
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+}
+
+/* 로고 hover 시 이미지 회전 */
+.smallimg .logo1 {
+    animation: rotate_logo 6s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate_logo{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.small .smallimg span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 2px;
+    left: 50px;
+    line-height: 1;
 }
 
 header .b ul li a:hover {
@@ -51,7 +85,7 @@ header .b ul li:nth-of-type(7) {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        line-height: 50px;
+        line-height: 1px;
     }
 
     nav li a {
@@ -69,9 +103,8 @@ header .b ul li:nth-of-type(7) {
         background-color: #666;
     }
 
-    .b ul li:hover {
+    .b ul li a:hover {
         background-color: #ddd;
-        border-radius: 10px;
     }
 
     .small img:hover {
@@ -96,7 +129,7 @@ header .b ul li:nth-of-type(7) {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        line-height: 50px;
+        line-height: 1px;
     }
 
     nav ul li {
@@ -115,6 +148,10 @@ header .b ul li:nth-of-type(7) {
         background-color: #666;
         flex-direction: column;
         width: 125px;
+    }
+
+    nav ul li .subblog li:hover{
+        background-color: #ddd;
     }
 
     nav li a {
