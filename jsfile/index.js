@@ -27,8 +27,27 @@ $(function(){
 });
 
 
+
+// 컨셉 사진 z-index 위치 전환
 $(function() {
-    $('img').click(function() {
-        $('img:first').appendTo('#wdphotography');
+    $('.wdphotography img').click(function() {
+        $('.wdphotography img:first').appendTo('.wdphotography');
+
+    });
+});
+
+
+
+$(function() {
+    $('.ntphotography img').click(function() {
+        $('.ntphotography img:first').appendTo('.ntphotography');
+    });
+});
+
+
+
+$(function() {
+    $('.crphotography img').click(function() {
+        $('.crphotography img:first').appendTo('.crphotography');
     });
 });
