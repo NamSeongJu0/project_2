@@ -25,4 +25,10 @@ $(function(){
         $(this).children('.subblog').stop().slideUp();
     });
 });
-   
+
+
+$(function() {
+    $('img').click(function() {
+        $('img:first').appendTo('#wdphotography');
+    });
+});
