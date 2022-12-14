@@ -38,17 +38,18 @@
     text-align: center;
     color: red;
     padding: 180px 0 0 0;
-    
+    position: relative;
 }
 
 #slider .text p:nth-of-type(1)::before {
+    position: absolute;
     content: "";
-    flex-grow: 1;
-    margin: 0px 1em;
-    background-color: red;
+    width: 45px;
     height: 1px;
-    font-size: 0;
-    line-height: 0;
+    background: #f04e3c;
+    left: 825px;
+    top: 90.5%;
+    transform: translateY(-50%);
 }
 
 #slider .text h1 {
@@ -108,6 +109,17 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 9%;
+    position: relative;
+}
+
+#contents .contents .con1::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 1px;
+    background: #d3d3d4;
+    top: 128px;
+    right: 210px;
 }
 
 #contents .contents h2 {
