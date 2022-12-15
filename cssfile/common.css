@@ -29,9 +29,7 @@ header {
     position: sticky;
     top: 0px;
     width: 100%;
-    height: 50px;
     background-color: black;
-    width: 100%;
     height: 70px;
     opacity: 0.9;
     z-index: 5;
@@ -81,7 +79,7 @@ header .b ul li:nth-of-type(7) a {
     position: relative;
 }
 
-header .b ul li:nth-of-type(7) a::before {
+/* header .b ul li:nth-of-type(7) a::before {
     content: "";
     position: absolute;
     left: 0;
@@ -97,7 +95,7 @@ header .b ul li:nth-of-type(7) a::before {
     transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
     transform: scaleX(0);
     border-radius: 0;
-}
+} */
 
 .b ul li a {
     color: white;
@@ -113,7 +111,29 @@ header .b ul li:nth-of-type(7) a::before {
     position: relative;
 }
 
-#footer .topbtn
+
+/* 탑 버튼 */
+#footer .topbtn {
+    width: 40px;
+    height: 40px;
+    background-color: #e93b32;
+    border-radius: 50%;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+
+#footer .topbtn:hover {
+    background-color: #fff;
+}
+
+#footer .topbtn a i {
+    font-size: 31px;
+    transform: rotate(-90deg);
+    padding: 0 0 0 2px;
+    color: black;
+    margin-top: 5px;
+}
 
 #footer li {
     line-height: 30px;
@@ -121,15 +141,37 @@ header .b ul li:nth-of-type(7) a::before {
 
 #footer .foot1 {
     width: 100%;
-    height: 350px;
-    background-color: bisque;
+    height: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-sizing: border-box;
 }
 
 #footer .foot1 .subfoot1 {
     position: relative;
+}
+
+#footer .nag,.use {
+    padding: 0 0 0 40px;
+}
+
+#footer .nag li {
+    line-height: 2;
+}
+
+#footer .nag ul li a:hover {
+    color: red;
+    transition: all 0.5s ease;
+}
+
+#footer .use li {
+    line-height: 2;
+}
+
+#footer .use ul li a:hover {
+    color: red;
+    transition: all 0.5s ease;
 }
 
 #footer .foot1 .subfoot1 span {
@@ -143,6 +185,7 @@ header .b ul li:nth-of-type(7) a::before {
 
 #footer .foot1 .subfoot1 p {
     color: #fff;
+    font-size: 18px;
     margin-top: 20px;
 }
 
@@ -155,16 +198,27 @@ header .b ul li:nth-of-type(7) a::before {
 
 #footer .foot1 ul li a {
     color: #fff;
+    opacity: 0.95;
+    font-size: 18px;
+}
+
+#footer .inf ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 400px;
+    height: 235px;
+    flex-wrap: wrap;
 }
 
 #footer .foot1 div {
-    background-color: green;
+    width: 400px;
+    height: 280px;
 }
 
 #footer .foot2 {
     width: 100%;
-    height: 100px;
-    background-color: aquamarine;
+    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -175,13 +229,17 @@ header .b ul li:nth-of-type(7) a::before {
     font-size: large;
 }
 
+#footer .foot2 .subfoot2 i {
+    color: pink;
+}
+
+#footer .foot2 .subfoot2 i:hover {
+    color: red;
+}
+
 #footer .foot2 .subfoot2 p a {
     text-shadow: -2px 0px red, 0px 2px red, 2px 0px red, 0px -2px red;
 }
-
-/* #footer .foot2 .subfoot2 img:hover {
-    background-color: red;
-} */
 
 #footer .foot2 .subfoot2_1 span {
     color: #fff;
@@ -196,18 +254,20 @@ header .b ul li:nth-of-type(7) a::before {
     content: "";
     width: 43px;
     height: 2px;
-    background: #3b3647;
+    background: #ccc;
     top: 40%;
     transform: translateY(-50%);
     right: 10px;
 }
 
-#footer .foot2 .subfoot2_1 a img {
+#footer .foot2 .subfoot2_1 a i {
+    color: #fff;
     margin-top: 2px;
 }
 
-#footer .foot2 div {
-    background-color: salmon;
+#footer .foot2 .subfoot2_1 a i:hover {
+    color: red;
+    transition: all 0.5s ease;
 }
 
 

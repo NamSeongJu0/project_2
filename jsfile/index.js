@@ -31,8 +31,11 @@ $(function(){
 // 컨셉 사진 z-index 위치 전환
 $(function() {
     $('.wdphotography img').click(function() {
-        $('.wdphotography img:first').appendTo('.wdphotography');
-
+        $('.wdphotography img:first').animate({left:150},600).appendTo('.wdphotography');
+        $('.wdphotography img:nth-of-type(1)').animate({left: 0},600);
+        $('.wdphotography img:nth-of-type(2)').animate({left: 50},600);
+        $('.wdphotography img:nth-of-type(3)').animate({left: 100},600);
+        $('.wdphotography img:nth-of-type(4)').animate({left: 150},600);
     });
 });
 
@@ -41,6 +44,10 @@ $(function() {
 $(function() {
     $('.ntphotography img').click(function() {
         $('.ntphotography img:first').appendTo('.ntphotography');
+        $('.ntphotography img:nth-of-type(1)').animate({right: 0},600);
+        $('.ntphotography img:nth-of-type(2)').animate({right: 50},600);
+        $('.ntphotography img:nth-of-type(3)').animate({right: 100},600);
+        $('.ntphotography img:nth-of-type(4)').animate({right: 150},600);
     });
 });
 
@@ -49,5 +56,9 @@ $(function() {
 $(function() {
     $('.crphotography img').click(function() {
         $('.crphotography img:first').appendTo('.crphotography');
+        $('.crphotography img:nth-of-type(1)').animate({left: 0},600);
+        $('.crphotography img:nth-of-type(2)').animate({left: 50},600);
+        $('.crphotography img:nth-of-type(3)').animate({left: 100},600);
+        $('.crphotography img:nth-of-type(4)').animate({left: 150},600);
     });
 });
