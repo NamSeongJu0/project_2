@@ -266,6 +266,11 @@
     z-index: 4;
 }
 
+/* .ntphotography img:nth-of-type(4):hover {
+    transform: rotateY(180deg);
+    transition: all 3s ease;
+} */
+
 #conceptimg .container .na {
     margin: 200px 0 60px 0;
 }
@@ -393,3 +398,49 @@
 }
 
 
+/* 위에서 못 돌린 거 여기서라도 돌려보자...(제발...) */
+#TOURIST .tourshot {
+    width: 100%;
+    height: 500px;
+    background-color: brown;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#TOURIST .container .tourshot .list {
+    width: 350px;
+    height: 450px;
+    perspective: 1100px;
+}
+
+#TOURIST .container .tourshot .list .listimg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all 2s ease;
+    transform-style: preserve-3d;
+}
+
+#TOURIST .container .tourshot .list .listimg .front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+#TOURIST .container .tourshot .list .listimg .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+#TOURIST .container .tourshot .list .listimg .back {
+    transform: rotateY(180deg);
+}
+
+#TOURIST .container .tourshot .listimg:hover {
+    transform: rotateY(180deg);
+}
