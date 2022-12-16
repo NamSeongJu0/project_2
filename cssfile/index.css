@@ -79,7 +79,6 @@
     background-color: black;
     opacity: 0.7;
     color: red;
-    transition: all 1s ease;
 }
 
 #slider .img {
@@ -187,7 +186,7 @@
 /* 웨딩 사진 */
 .wdphotography {
     width: 100%;
-    height: 750px;
+    height: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -225,14 +224,14 @@
 
 .wdphotography .information p {
     position: absolute;
-    right: 25%;
+    right: 20%;
 }
 
 
 /* 네이처 사진 */
 .ntphotography {
     width: 100%;
-    height: 750px;
+    height: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -273,19 +272,19 @@
 } */
 
 #conceptimg .container .na {
-    margin: 200px 0 60px 0;
+    margin: 100px 0 60px 0;
 }
 
 .ntphotography .information p {
     position: absolute;
-    left: 25%;
+    left: 20%;
 }
 
 
 /* 창의적인 사진 */
 .crphotography {
     width: 100%;
-    height: 750px;
+    height: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -321,12 +320,12 @@
 }
 
 #conceptimg .container .cr {
-    margin: 200px 0 60px 0;
+    margin: 100px 0 60px 0;
 }
 
 .crphotography .information p {
     position: absolute;
-    right: 25%;
+    right: 20%;
 }
 
 
@@ -334,7 +333,7 @@
 
 #LightPainting {
     width: 100%;
-    height: 4050px;
+    height: 4100px;
     background-image: url('../indeximg/bgi2.png');
     background-repeat: no-repeat;
     background-position: right center;
@@ -345,7 +344,7 @@
     text-align: center;
     font-size: 3.5em;
     color: white;
-    margin-bottom: 30px;
+    margin: 60px 0;
 }
 
 #LightPainting .container .light .lt {
@@ -370,7 +369,7 @@
 
 #TOURIST {
     width: 100%;
-    height: 1000px;
+    height: 850px;
     background-color: #666;
 }
 
@@ -383,6 +382,7 @@
     align-items: center;
     flex-flow: column wrap;
     box-sizing: border-box;
+    margin: 0 0 50px;
 }
 
 #TOURIST .container .tourblog h1 {
@@ -399,14 +399,15 @@
 }
 
 
-/* 위에서 못 돌린 거 여기서라도 돌려보자...(제발...) */
+/* 해결 했다!! 이미지 회전 */
 #TOURIST .tourshot {
     width: 100%;
-    height: 500px;
+    height: 650px;
     background-color: brown;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    box-sizing: border-box;
 }
 
 
@@ -446,3 +447,12 @@
     transform: rotateY(180deg);
 }
 
+
+/* 투어 소개 */
+#TOURIST .tourshot .list .tourinfo {
+    width: 350px;
+    height: 95px;
+    background-color: darkseagreen;
+    box-sizing: border-box;
+    padding: 10px;
+}

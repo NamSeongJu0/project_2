@@ -62,3 +62,34 @@ $(function() {
         $('.crphotography img:nth-of-type(4)').animate({left: 150},600);
     });
 });
+
+
+// // 헤더 위치에 따른 변화
+// $(document).ready(function (){
+//     $(window).scroll(function () {
+//         if ($(this).scrollTop() > 0) {
+//             $('header').fadeIn(300);
+//         } else {
+//             $('header').fadeOut(300);
+//         }
+//     });
+// })
+
+
+// 스크롤 위치에 따른 탑버튼 변화
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.topbtn').fadeIn(300);
+        } else {
+            $('.topbtn').fadeOut(300);
+        }
+    });
+
+// 탑 버튼 속도 조절
+    $('.topbtn').click(function (event) {
+        event.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, 1800);
+    });
+});
+

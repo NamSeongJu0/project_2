@@ -54,7 +54,7 @@ header {
     }
 }
 
-.small .smallimg span {
+.small .smallimg span a {
     font-size: 1.3rem;
     font-weight: bold;
     color: white;
