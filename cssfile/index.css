@@ -222,11 +222,56 @@
     z-index: 4;
 }
 
-.wdphotography .information p {
+
+/* 웨딩 설명 부분 */
+.wdphotography .information {
+    width: 35%;
+    height: 750px;
+    background-color: saddlebrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     position: absolute;
-    right: 20%;
+    right: 0%;
 }
 
+.wdphotography .information h3 {
+
+}
+
+.wdphotography .information form {
+    width: 100%;
+    height: 435px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.wdphotography .information form .input input {
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.wdphotography .information form .input textarea {
+    width: 100%;
+    height: 175px;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.wdphotography .information form .input input:hover {
+    background-color: aliceblue;
+}
+
+.wdphotography .information form .input textarea:hover {
+    background-color: aliceblue;
+}
 
 /* 네이처 사진 */
 .ntphotography {
@@ -266,10 +311,56 @@
     z-index: 4;
 }
 
-/* .ntphotography img:nth-of-type(4):hover {
-    transform: rotateY(180deg);
-    transition: all 3s ease;
-} */
+
+/* 네이처 설명 부분 */
+.ntphotography .information {
+    width: 35%;
+    height: 750px;
+    background-color: saddlebrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0%;
+}
+
+.ntphotography .information h3 {
+
+}
+
+.ntphotography .information form {
+    width: 100%;
+    height: 435px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.ntphotography .information form .input input {
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.ntphotography .information form .input textarea {
+    width: 100%;
+    height: 175px;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.ntphotography .information form .input input:hover {
+    background-color: aliceblue;
+}
+
+.ntphotography .information form .input textarea:hover {
+    background-color: aliceblue;
+}
 
 #conceptimg .container .na {
     margin: 100px 0 60px 0;
@@ -317,6 +408,56 @@
     top: 150px;
     left: 150px;
     z-index: 4;
+}
+
+/* 창의적 사진 설명 부분 */
+.crphotography .information {
+    width: 35%;
+    height: 750px;
+    background-color: saddlebrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 0%;
+}
+
+.crphotography .information h3 {
+
+}
+
+.crphotography .information form {
+    width: 100%;
+    height: 435px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.crphotography .information form .input input {
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.crphotography .information form .input textarea {
+    width: 100%;
+    height: 175px;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.crphotography .information form .input input:hover {
+    background-color: aliceblue;
+}
+
+.crphotography .information form .input textarea:hover {
+    background-color: aliceblue;
 }
 
 #conceptimg .container .cr {
@@ -370,19 +511,18 @@
 #TOURIST {
     width: 100%;
     height: 850px;
-    background-color: #666;
+    background-color: #000;
 }
 
 #TOURIST .container .tourblog {
     width: 100%;
     height: 110px;
-    background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
     box-sizing: border-box;
-    margin: 0 0 50px;
+    margin: 60px 0;
 }
 
 #TOURIST .container .tourblog h1 {
@@ -402,11 +542,10 @@
 /* 해결 했다!! 이미지 회전 */
 #TOURIST .tourshot {
     width: 100%;
-    height: 650px;
-    background-color: brown;
+    height: 545px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     box-sizing: border-box;
 }
 
@@ -452,7 +591,19 @@
 #TOURIST .tourshot .list .tourinfo {
     width: 350px;
     height: 95px;
-    background-color: darkseagreen;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 15px;
+}
+
+#TOURIST .tourshot .list .tourinfo span {
+    font-size: 14px;
+    color: #d3d3d4;
+}
+
+#TOURIST .tourshot .list .tourinfo h4 a {
+    color: #fff;
+}
+
+#TOURIST .tourshot .list .tourinfo h4 a:hover {
+    color: red;
 }
