@@ -51,7 +51,7 @@
     transform: translateY(-50%);
 }
 
-#slider .text > p:nth-of-type(1) {
+#slider .text .text_p {
     color: red;
     padding: 180px 0 0 0;
 }
@@ -202,6 +202,7 @@
 
 .wdphotography img {
     position: absolute;
+    border: 1px orange;
 }
 
 .wdphotography img:nth-of-type(1) {
@@ -233,24 +234,28 @@
 .wdphotography .information {
     width: 35%;
     height: 750px;
-    background-color: saddlebrown;
+    /* background-color: saddlebrown; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: absolute;
     right: 0%;
+    text-align: center;
 }
 
 .wdphotography .information h3 {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     margin-bottom: 10px;
 }
 
-.wdphotography .information h3 p {
+.wdphotography .information p {
     color: #fff;
     font-size: 1.2rem;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .wdphotography .information form {
@@ -344,17 +349,28 @@
 .ntphotography .information {
     width: 35%;
     height: 750px;
-    background-color: saddlebrown;
+    /* background-color: saddlebrown; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: absolute;
     left: 0%;
+    text-align: center;
 }
 
 .ntphotography .information h3 {
+    color: #fff;
+    font-size: 1.7rem;
     margin-bottom: 10px;
+}
+
+.ntphotography .information p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .ntphotography .information form {
@@ -409,11 +425,6 @@
     margin: 100px 0 60px 0;
 }
 
-.ntphotography .information p {
-    position: absolute;
-    left: 20%;
-}
-
 
 /* 창의적인 사진 */
 .crphotography {
@@ -457,17 +468,29 @@
 .crphotography .information {
     width: 35%;
     height: 750px;
-    background-color: saddlebrown;
+    /* background-color: saddlebrown; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: absolute;
     right: 0%;
+    text-align: center;
 }
 
 .crphotography .information h3 {
+    color: #fff;
+    font-size: 1.7rem;
     margin-bottom: 10px;
+}
+
+.crphotography .information p {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .crphotography .information form {
@@ -522,11 +545,6 @@
     margin: 100px 0 60px 0;
 }
 
-.crphotography .information p {
-    position: absolute;
-    right: 20%;
-}
-
 
 /* 라이트페인팅 */
 
@@ -577,7 +595,7 @@
 #LightPainting .information {
     width: 50%;
     height: 750px;
-    background-color: saddlebrown;
+    /* background-color: saddlebrown; */
     display: flex;
     justify-content: center;
     align-items: center;
