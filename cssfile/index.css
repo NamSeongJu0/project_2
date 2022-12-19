@@ -27,34 +27,37 @@
     background-position: 0% 100%, 150% 100%;
     background-color: black;
     background-repeat: no-repeat;
-    
+    text-align: center;
 }
 
 #slider .text h1,p {
     text-shadow: 3px 3px 3px #666;
 }
 
-#slider .text > p:nth-of-type(1) {
-    text-align: center;
-    color: red;
-    padding: 180px 0 0 0;
+#slider .text .text_p {
+    width: 340px;
+    margin: 0 auto;
     position: relative;
 }
 
-#slider .text p:nth-of-type(1)::before {
+#slider .text .text_p::before {
     position: absolute;
     content: "";
     width: 45px;
     height: 1px;
     background: red;
-    left: 620px;
-    top: 90.5%;
+    left: -48px;
+    top: 190px;
     transform: translateY(-50%);
+}
+
+#slider .text > p:nth-of-type(1) {
+    color: red;
+    padding: 180px 0 0 0;
 }
 
 #slider .text h1 {
     font-size: 4.5rem;
-    text-align: center;
     color: #eee;
     letter-spacing: 10px;
     margin-bottom: 20px;
@@ -62,10 +65,8 @@
 
 #slider .text p {
     font-size: 1.5rem;
-    text-align: center;
     color: #eee;
     height: 30px;
-    position: relative;
 }
 
 #slider .text p a {
@@ -184,6 +185,10 @@
     color: #fff;
 }
 
+#conceptimg img:hover {
+    cursor: pointer;
+}
+
 /* 웨딩 사진 */
 .wdphotography {
     width: 100%;
@@ -238,7 +243,14 @@
 }
 
 .wdphotography .information h3 {
+    color: #fff;
+    font-size: 1.5rem;
     margin-bottom: 10px;
+}
+
+.wdphotography .information h3 p {
+    color: #fff;
+    font-size: 1.2rem;
 }
 
 .wdphotography .information form {
@@ -278,6 +290,7 @@
     border-radius: 25px;
     background-color: #9d8f8f;
     margin-bottom: 0;
+    border: none;
 }
 
 .wdphotography .information form .input input:hover {
@@ -381,6 +394,7 @@
     border-radius: 25px;
     background-color: #9d8f8f;
     margin-bottom: 0;
+    border: none;
 }
 
 .ntphotography .information form .input input:hover {
@@ -493,6 +507,7 @@
     border-radius: 25px;
     background-color: #9d8f8f;
     margin-bottom: 0;
+    border: none;
 }
 
 .crphotography .information form .input input:hover {
@@ -517,7 +532,7 @@
 
 #LightPainting {
     width: 100%;
-    height: 4100px;
+    height: 4800px;
     background-image: url('../indeximg/bgi2.png');
     background-repeat: no-repeat;
     background-position: right center;
@@ -543,17 +558,87 @@
     
 }
 
-#LightPainting .information p {
+#LightPainting .information h3 {
+    font-size: 2rem;
     color: #fff;
     text-align: center;
+    margin: 30px 0;
+}
+
+#LightPainting .information p {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* 라이트페인팅 설명 부분 */
+#LightPainting .information {
+    width: 50%;
+    height: 750px;
+    background-color: saddlebrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#LightPainting .information form {
+    width: 100%;
+    height: 483px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 2px solid burlywood;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#LightPainting .information form .input input {
+    width: 90%;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgba(250, 250, 250, 0.95);
+    margin-bottom: 10px;
+}
+
+#LightPainting .information form .input textarea {
+    width: 90%;
+    height: 175px;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgba(250, 250, 250, 0.95);
+    margin-bottom: 10px;
+}
+
+#LightPainting .information form .input input[type="submit"] {
+    width: 50%;
+    border-radius: 25px;
+    background-color: #9d8f8f;
+    margin-bottom: 0;
+    border: none;
+}
+
+#LightPainting .information form .input input:hover {
+    background-color: aliceblue;
+}
+
+#LightPainting .information form .input textarea:hover {
+    background-color: aliceblue;
 }
 
 
 /* 투어리스트 */
-
 #TOURIST {
     width: 100%;
-    height: 850px;
+    height: 900px;
     background-color: #000;
 }
 
