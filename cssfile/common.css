@@ -348,10 +348,12 @@ header .b >ul > li:last-of-type a {
         display: none;
     }
 
-    /* 풋터 부분 */
+
+
+    /* 풋터 반응형... */
     #footer {
         width: 100%;
-        height: 450px;
+        height: 650px;
         background-color: rgba(17, 17, 17, 0.7);
         position: relative;
     }
@@ -384,21 +386,41 @@ header .b >ul > li:last-of-type a {
         line-height: 30px;
     }
     
+
+    /* 작업 중... */
     #footer .foot1 {
         width: 100%;
-        height: 400px;
+        height: 600px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center; 
         align-items: center;
+        flex-flow: row wrap;
         box-sizing: border-box;
     }
     
     #footer .foot1 .subfoot1 {
         position: relative;
+        width: 45%;
+        height: 200px;
     }
     
+    #footer .foot1 .nag {
+        width: 45%;
+        height: 200px;
+    }
+
+    #footer .foot1 .use {
+        width: 45%;
+        height: 200px;
+    }
+
+    #footer .foot1 .inf {
+        width: 45%;
+        height: 200px;
+    }
+
     #footer .nag,.use {
-        padding: 0 0 0 40px;
+        padding: 0 0 0 0;
     }
     
     #footer .nag li {
