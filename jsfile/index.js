@@ -1,13 +1,13 @@
 // 윈도우 너비가 768px 밑에일 시 메뉴바 보임
 
 $(function(){
-    $(".a").click(function(){
+    $("#a").click(function(){
      $(".b").slideToggle();
     });
    });
 
    $(window).resize(function(){
-    if(window.innerWidth>=768){
+    if(window.innerWidth >= 767){
        $('.b').show();
     }
     else{
@@ -64,25 +64,27 @@ $(function() {
 });
 
 
-// // 헤더 위치에 따른 변화
-// $(document).ready(function (){
-//     $(window).scroll(function () {
-//         if ($(this).scrollTop() > 0) {
-//             $('header').fadeIn(300);
-//         } else {
-//             $('header').fadeOut(300);
-//         }
-//     });
-// })
+// 헤더 위치에 따른 변화
+$(document).ready(function (){
+    $(window).scroll(function () {
+        if ($(window).scrollTop() < 100 || $(window).scrollTop() > 700) {
+            $('header').fadeIn(500).css('backgroundColor', 'none');
+            $('#wrap').css('backgroundColor', 'rgba(0, 0, 0, 0.9)');
+        } else {
+            $('header').fadeOut(500).css('backgroundColor', 'rgba(0, 0, 0, 0.9)');
+
+        }
+    });
+})
 
 
 // 스크롤 위치에 따른 탑버튼 변화
 $(document).ready(function () {
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.topbtn').fadeIn(300);
+        if ($(this).scrollTop() > 700) {
+            $('.topbtn').fadeIn(500);
         } else {
-            $('.topbtn').fadeOut(300);
+            $('.topbtn').fadeOut(500);
         }
     });
 
