@@ -267,6 +267,7 @@ header .b >ul > li:last-of-type a {
 /* 모바일 부분.... */
 @media (max-width: 767px) {
     header .small {
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -382,12 +383,17 @@ header .b >ul > li:last-of-type a {
     /* 풋터 반응형... */
     #footer {
         width: 100%;
-        height: 700px;
+        height: 90vw;
+        /* 원래 700px */
         background-color: rgba(17, 17, 17, 0.7);
         position: relative;
     }
     
-    
+    #footer .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     /* 탑 버튼 */
     #footer .topbtn {
         width: 40px;
@@ -416,11 +422,9 @@ header .b >ul > li:last-of-type a {
         line-height: 30px;
     }
     
-
-    /* 작업 중... */
     #footer .foot1 {
         width: 100%;
-        height: 650px;
+        height: auto;
         display: flex;
         justify-content: center; 
         align-items: center;
@@ -545,7 +549,7 @@ header .b >ul > li:last-of-type a {
     
     #footer .foot2 {
         width: 100%;
-        /* height: 50px; */
+        height: auto;
         display: flex;
         justify-content: flex-start;
         align-items: center;

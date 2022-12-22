@@ -119,18 +119,18 @@
     width: 60px;
     height: 1px;
     background: #d3d3d4;
-    top: 227px;
-    right: 210px;
+    top: 230px;
+    right: 255px;
 }
 
 #contents .contents h2 {
-    font-size: 3.5em;
+    font-size: 3.7rem;
     color: white;
 }
 
 #contents .contents a{
     color: red;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 #contents .contents a:hover {
@@ -151,12 +151,12 @@
 }
 
 #contents .contents .years .year1 p {
-    margin-top: 9px;
+    margin-top: 5px;
 }
 
 #contents .contents p {
     color: white;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 
@@ -861,21 +861,22 @@
     background-image: url('../indeximg/bgi.png');
     background-repeat: no-repeat;
     width: 100%;
-    height: 500px;
+    height: auto;
     background-color: rgba(17, 17, 17, 0.7);
     background-position: right bottom;
 }
 
 #contents {
-    height: 500px;
+    width: 100%;
+    height: 50vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
+    /* position: relative; */
 }
 
 #contents .contents .con1::after {
-    position: absolute;
+    /* position: absolute; */
     content: "";
     width: 60px;
     height: 1px;
@@ -885,11 +886,13 @@
 }
 
 #contents .contents h2 {
-    font-size: 3.5em;
+    width: 100%;
+    font-size: 3.2rem;
     color: white;
 }
 
 #contents .contents a{
+    width: 100%;
     color: red;
     font-size: 1.3rem;
 }
@@ -905,37 +908,45 @@
 }
 
 #contents .contents .years .year span {
+    width: 100%;
     color: white;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     padding-right: 25px;
     font-weight: bold;
 }
 
 #contents .contents .years .year1 p {
-    margin-top: 9px;
+    width: 100%;
+    margin-top: 5px;
 }
 
 #contents .contents p {
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 
 /* 컨셉 사진 */
 #conceptimg {
     width: 100%;
-    height: 3500px;
+    height: auto;
     background-color: rgba(14, 14, 14, 0.9);
     background-image: url('../indeximg/bgi1.png');
     background-repeat: no-repeat;
     background-position: left center;
 }
 
+/* #conceptimg .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+} */
 
 /* conceptimg 제목 */
 #conceptimg .container h1 {
+    width: 100%;
     text-align: center;
-    font-size: 3.5em;
+    font-size: 3.0em;
     color: white;
     margin: 0 0 60px 0;
     padding-top: 60px;
@@ -952,7 +963,7 @@
 /* 웨딩 사진 */
 .wdphotography {
     width: 100%;
-    height: 900px;
+    height: 83vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -961,6 +972,7 @@
 }
 
 .wdphotography img {
+    width: 45%;
     position: absolute;
 }
 
@@ -992,7 +1004,7 @@
 /* 웨딩 설명 부분 */
 .wdphotography .information {
     width: 35%;
-    height: 750px;
+    height: auto;
     /* background-color: saddlebrown; */
     display: flex;
     justify-content: center;
@@ -1004,22 +1016,24 @@
 }
 
 .wdphotography .information h3 {
+    width: 80%;
     color: #fff;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 .wdphotography .information p {
+    width: 80%;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 20px;
     box-sizing: border-box;
     padding: 10px;
 }
 
 .wdphotography .information form {
-    width: 100%;
-    height: 483px;
+    width: 85%;
+    height: auto;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -1030,8 +1044,8 @@
 }
 
 .wdphotography .information form .input input {
-    width: 90%;
-    height: 60px;
+    width: 85%;
+    height: auto;
     box-sizing: border-box;
     padding: 7px;
     font-size: 14px;
@@ -1040,8 +1054,8 @@
 }
 
 .wdphotography .information form .input textarea {
-    width: 90%;
-    height: 175px;
+    width: 85%;
+    height: auto;
     box-sizing: border-box;
     padding: 7px;
     font-size: 14px;
@@ -1050,7 +1064,8 @@
 }
 
 .wdphotography .information form .input input[type="submit"] {
-    width: 50%;
+    width: 60%;
+    height: auto;
     border-radius: 25px;
     background-color: #9d8f8f;
     margin-bottom: 0;
@@ -1068,7 +1083,7 @@
 /* 네이처 사진 */
 .ntphotography {
     width: 100%;
-    height: 900px;
+    height: 83vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1076,6 +1091,7 @@
 }
 
 .ntphotography img {
+    width: 45%;
     position: absolute;
 }
 
@@ -1107,7 +1123,7 @@
 /* 네이처 설명 부분 */
 .ntphotography .information {
     width: 35%;
-    height: 750px;
+    height: auto;
     /* background-color: saddlebrown; */
     display: flex;
     justify-content: center;
@@ -1119,22 +1135,24 @@
 }
 
 .ntphotography .information h3 {
+    width: 80%;
     color: #fff;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 .ntphotography .information p {
+    width: 80%;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 20px;
     box-sizing: border-box;
     padding: 10px;
 }
 
 .ntphotography .information form {
-    width: 100%;
-    height: 483px;
+    width: 85%;
+    height: auto;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -1145,8 +1163,8 @@
 }
 
 .ntphotography .information form .input input {
-    width: 90%;
-    height: 60px;
+    width: 85%;
+    height: auto;
     box-sizing: border-box;
     padding: 7px;
     font-size: 14px;
@@ -1155,8 +1173,8 @@
 }
 
 .ntphotography .information form .input textarea {
-    width: 90%;
-    height: 175px;
+    width: 85%;
+    height: auto;
     box-sizing: border-box;
     padding: 7px;
     font-size: 14px;
@@ -1165,7 +1183,7 @@
 }
 
 .ntphotography .information form .input input[type="submit"] {
-    width: 50%;
+    width: 60%;
     border-radius: 25px;
     background-color: #9d8f8f;
     margin-bottom: 0;
@@ -1188,7 +1206,7 @@
 /* 창의적인 사진 */
 .crphotography {
     width: 100%;
-    height: 900px;
+    height: 83vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1196,6 +1214,7 @@
 }
 
 .crphotography img {
+    width: 45%;
     position: absolute;
 }
 
@@ -1226,7 +1245,7 @@
 /* 창의적 사진 설명 부분 */
 .crphotography .information {
     width: 35%;
-    height: 750px;
+    height: auto;
     /* background-color: saddlebrown; */
     display: flex;
     justify-content: center;
@@ -1238,14 +1257,16 @@
 }
 
 .crphotography .information h3 {
+    width: 80%;
     color: #fff;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
 .crphotography .information p {
+    width: 80%;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     margin-bottom: 20px;
     box-sizing: border-box;
@@ -1253,8 +1274,8 @@
 }
 
 .crphotography .information form {
-    width: 100%;
-    height: 483px;
+    width: 85%;
+    height: auto;
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -1265,8 +1286,8 @@
 }
 
 .crphotography .information form .input input {
-    width: 90%;
-    height: 60px;
+    width: 85%;
+    height: auto;
     box-sizing: border-box;
     padding: 7px;
     font-size: 14px;
@@ -1275,8 +1296,8 @@
 }
 
 .crphotography .information form .input textarea {
-    width: 90%;
-    height: 175px;
+    width: 85%;
+    height: auto;
     box-sizing: border-box;
     padding: 7px;
     font-size: 14px;
@@ -1285,7 +1306,7 @@
 }
 
 .crphotography .information form .input input[type="submit"] {
-    width: 50%;
+    width: 60%;
     border-radius: 25px;
     background-color: #9d8f8f;
     margin-bottom: 0;
@@ -1316,13 +1337,19 @@
     background-color: rgba(17, 17, 17, 0.7); 
 }
 
+#LightPainting .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 #LightPainting .container h1 {
-    width: 85%;
-    height: auto;
-    text-align: center;
+    width: 100%;
+    height: 150px;
+    /* text-align: center; */
     font-size: 3.0em;
     color: white;
-    margin-bottom: 60px;
+    margin-bottom: 0;
     padding-top: 60px;
 }
 
@@ -1334,7 +1361,8 @@
     align-items: center;
     flex-direction: column;
     /* position: relative; */
-    text-align: center;
+    /* text-align: center; */
+    margin: 0 auto;
 }
 
 #LightPainting .container .light .lt img {
