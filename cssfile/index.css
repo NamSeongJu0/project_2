@@ -796,7 +796,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     width: 90%;
     height: 60vw;
     margin: 0 auto;
@@ -1343,7 +1343,7 @@
 
 #LightPainting {
     width: 100%;
-    height: 410vw;
+    height: auto;
     background-image: url('../indeximg/bgi2.png');
     background-repeat: no-repeat;
     background-position: right center;
@@ -1351,19 +1351,22 @@
 }
 
 #LightPainting .container{
+    width: 100%;
+    height: 400vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 #LightPainting .container h1 {
     width: 100%;
-    height: 150px;
+    height: 0;
     /* text-align: center; */
     font-size: 3.0em;
     color: white;
     margin-bottom: 0;
-    padding-top: 60px;
+    padding-top: 0;
 }
 
 #LightPainting .container .light .lt {
