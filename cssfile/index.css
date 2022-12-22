@@ -782,23 +782,37 @@
 /* 배경 + 글자 */
 #slider {
     max-width: 100%;
-    height: 800px;
+    height: auto;
     background-image: url('../indeximg/bi1.png'), url('../indeximg/bi.jpg');
     background-size: 30% 100%, 70% 100%;
     background-position: 0% 100%, 150% 100%;
     background-color: black;
     background-repeat: no-repeat;
-    text-align: center;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+#slider .text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 60vw;
+    margin: 0 auto;
 }
 
 #slider .text h1,p {
+    /* width: 100%; */
     text-shadow: 3px 3px 3px #666;
 }
 
 #slider .text .text_p {
-    width: 340px;
-    margin: 0 auto;
+    width: 100%;
+    /* margin: 0 auto; */
     position: relative;
+    color: red;
+    padding: 0 0 0 0;
 }
 
 #slider .text .text_p::before {
@@ -807,25 +821,24 @@
     width: 45px;
     height: 1px;
     background: red;
-    left: -48px;
+    left: 285px;
     top: 275px;
     transform: translateY(-50%);
 }
 
-#slider .text .text_p {
-    color: red;
-    padding: 265px 0 0 0;
-}
-
 #slider .text h1 {
-    font-size: 4.5rem;
+    width: 100%;
+    height: auto;
+    font-size: 4rem;
     color: #eee;
     letter-spacing: 10px;
     margin-bottom: 20px;
 }
 
 #slider .text p {
-    font-size: 1.5rem;
+    width: 100%;
+    height: auto;
+    font-size: 1.3rem;
     color: #eee;
     height: 30px;
 }
