@@ -333,6 +333,7 @@ header .b >ul > li:last-of-type a {
 /* 미디어 중간 사이즈 */
 @media (min-width: 768px) and (max-width: 1199px){
     header {
+        height: 60px;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -343,9 +344,13 @@ header .b >ul > li:last-of-type a {
         position: relative;
     }
 
+    header .b >ul > li:last-of-type {
+        height: 60px;
+    }
+
     nav ul {
         display: flex;
-        line-height: 70px;
+        line-height: 60px;
     }
 
     nav ul li .subblog {
@@ -588,7 +593,7 @@ header .b >ul > li:last-of-type a {
         width: 43px;
         height: 2px;
         background: #ccc;
-        top: 40%;
+        top: 50%;
         transform: translateY(-50%);
         right: 10px;
     }

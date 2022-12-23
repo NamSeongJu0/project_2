@@ -756,12 +756,7 @@
 
 /* 모바일 */
 @media (max-width: 767px) {
-
-}
-
-/* 미디어 중간 사이즈 */
-@media (min-width: 768px) and (max-width: 1199px) {
-    /* 가장 큰 박스 */
+        /* 가장 큰 박스 */
 #wrap {
     width: 100%;
     height: auto;
@@ -808,7 +803,7 @@
 }
 
 #slider .text .text_p {
-    width: 100%;
+    width: 300px;
     /* margin: 0 auto; */
     position: relative;
     color: red;
@@ -821,8 +816,8 @@
     width: 45px;
     height: 1px;
     background: red;
-    left: 285px;
-    top: 275px;
+    left: -45px;
+    top: 8px;
     transform: translateY(-50%);
 }
 
@@ -888,14 +883,19 @@
     /* position: relative; */
 }
 
+#contents .contents .con1 {
+    width: 165px;
+    position: relative;
+}
+
 #contents .contents .con1::after {
     /* position: absolute; */
     content: "";
-    width: 60px;
+    width: 55px;
     height: 1px;
-    background: #d3d3d4;
-    top: 227px;
-    right: 210px;
+    background: red;
+    top: 8px;
+    right: -65px;
 }
 
 #contents .contents h2 {
@@ -904,7 +904,7 @@
     color: white;
 }
 
-#contents .contents a{
+#contents .contents a {
     width: 100%;
     color: red;
     font-size: 1.3rem;
@@ -1212,7 +1212,7 @@
 }
 
 #conceptimg .container .na {
-    margin: 100px 0 60px 0;
+    margin: 80px 0 60px 0;
 }
 
 
@@ -1335,7 +1335,827 @@
 }
 
 #conceptimg .container .cr {
-    margin: 100px 0 60px 0;
+    margin: 80px 0 60px 0;
+}
+
+
+/* 라이트페인팅 */
+
+#LightPainting {
+    width: 100%;
+    height: auto;
+    background-image: url('../indeximg/bgi2.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-color: rgba(17, 17, 17, 0.7); 
+}
+
+#LightPainting .container{
+    width: 100%;
+    height: 400vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#LightPainting .container h1 {
+    width: 100%;
+    height: 0;
+    /* text-align: center; */
+    font-size: 3.0em;
+    color: white;
+    margin-bottom: 0;
+    padding-top: 0;
+}
+
+#LightPainting .container .light .lt {
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /* position: relative; */
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+#LightPainting .container .light .lt img {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0px;
+    
+}
+
+
+/* 라이트페인팅 설명 부분 */
+#LightPainting .information {
+    width: 75%;
+    height: auto;
+    /* background-color: saddlebrown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#LightPainting .information h3 {
+    width: 85%;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin: 30px 0;
+}
+
+#LightPainting .information p {
+    width: 85%;
+    font-size: 1.3rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#LightPainting .information form {
+    width: 85%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#LightPainting .information form .input input {
+    width: 85%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgba(250, 250, 250, 0.95);
+    margin-bottom: 10px;
+}
+
+#LightPainting .information form .input textarea {
+    width: 85%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgba(250, 250, 250, 0.95);
+    margin-bottom: 10px;
+}
+
+#LightPainting .information form .input input[type="submit"] {
+    width: 50%;
+    border-radius: auto;
+    background-color: #9d8f8f;
+    margin-bottom: 0;
+    border: none;
+}
+
+#LightPainting .information form .input input:hover {
+    background-color: aliceblue;
+}
+
+#LightPainting .information form .input textarea:hover {
+    background-color: aliceblue;
+}
+
+
+/* 투어리스트 */
+#TOURIST {
+    width: 100%;
+    height: 82vw;
+    background-color: rgba(14, 14, 14, 0.9);
+}
+
+#TOURIST .container .tourblog {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    box-sizing: border-box;
+    /* margin-bottom: -85px; */
+}
+
+#TOURIST .container .tourblog h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 3.0rem;
+    padding: 10px 0 5px 0;
+}
+
+#TOURIST .container .tourblog p {
+    color: #fff;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+}
+
+
+/* 이미지 회전 */
+#TOURIST .tourshot {
+    width: 100%;
+    height: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    box-sizing: border-box;
+    /* padding: 30px; */
+}
+
+#TOURIST .container .tourshot .list {
+    width: 30%;
+    height: 38vw;
+    perspective: 1100px;
+}
+
+#TOURIST .container .tourshot .list .listimg {
+    width: 100%;
+    /* height: 450px; */
+    /* position: relative; */
+    transition: all 2s ease;
+    transform-style: preserve-3d;
+}
+
+#TOURIST .container .tourshot .list .listimg .front {
+    /* position: absolute; */
+    /* width: 80%; */
+    /* height: 100%; */
+    backface-visibility: hidden;
+}
+
+#TOURIST .container .tourshot .list .listimg img {
+    width: 100%;
+}
+
+#TOURIST .container .tourshot .list .listimg .back {
+    /* position: absolute; */
+    /* width: 80%; */
+    /* height: 100%; */
+    backface-visibility: hidden;
+}
+
+#TOURIST .container .tourshot .list .listimg .back {
+    transform: rotateY(180deg);
+}
+
+#TOURIST .container .tourshot .listimg:hover {
+    transform: rotateY(180deg);
+}
+
+/* 투어 소개 */
+#TOURIST .tourshot .list .tourinfo {
+    width: 85%;
+    height: 95px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+#TOURIST .tourshot .list .tourinfo span {
+    font-size: 14px;
+    color: #d3d3d4;
+}
+
+#TOURIST .tourshot .list .tourinfo h4 a {
+    color: #fff;
+    font-size: 15px;
+}
+
+#TOURIST .tourshot .list .tourinfo h4 a:hover {
+    color: red;
+}
+}
+
+/* 미디어 중간 사이즈 */
+@media (min-width: 768px) and (max-width: 1199px) {
+    /* 가장 큰 박스 */
+#wrap {
+    width: 100%;
+    height: auto;
+}
+
+
+/* 주요 컨텐츠 사이즈 */
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    /* border: 1px solid orange;
+    background-color: #333; */
+}
+
+
+/* 배경 + 글자 */
+#slider {
+    max-width: 100%;
+    height: auto;
+    background-image: url('../indeximg/bi1.png'), url('../indeximg/bi.jpg');
+    background-size: 30% 100%, 70% 100%;
+    background-position: 0% 100%, 150% 100%;
+    background-color: black;
+    background-repeat: no-repeat;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+#slider .text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 90%;
+    height: 60vw;
+    margin: 0 auto;
+}
+
+#slider .text h1,p {
+    /* width: 100%; */
+    text-shadow: 3px 3px 3px #666;
+}
+
+#slider .text .text_p {
+    width: 300px;
+    /* margin: 0 auto; */
+    position: relative;
+    color: red;
+    padding: 0 0 0 0;
+}
+
+#slider .text .text_p::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 1px;
+    background: red;
+    left: -45px;
+    top: 8px;
+    transform: translateY(-50%);
+}
+
+#slider .text h1 {
+    width: 100%;
+    height: auto;
+    font-size: 4rem;
+    color: #eee;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+#slider .text p {
+    width: 100%;
+    height: auto;
+    font-size: 1.3rem;
+    color: #eee;
+    height: 30px;
+}
+
+#slider .text p a {
+    border-radius: 20px;
+    background-color: #aaa;
+    opacity: 0.8;
+    color: white;
+    padding: 10px 20px;
+}
+
+#slider .text p a:hover{
+    background-color: black;
+    opacity: 0.7;
+    color: red;
+}
+
+#slider .img {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#slider img {
+    z-index: 1;
+    height: 500px;
+}
+
+
+/* 섹션 부분 */
+#section {
+    background-image: url('../indeximg/bgi.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-color: rgba(17, 17, 17, 0.7);
+    background-position: right bottom;
+}
+
+#contents {
+    width: 100%;
+    height: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* position: relative; */
+}
+
+#contents .contents .con1 {
+    width: 165px;
+    position: relative;
+}
+
+#contents .contents .con1::after {
+    /* position: absolute; */
+    content: "";
+    width: 55px;
+    height: 1px;
+    background: red;
+    top: 8px;
+    right: -65px;
+}
+
+#contents .contents h2 {
+    width: 100%;
+    font-size: 3.2rem;
+    color: white;
+}
+
+#contents .contents a {
+    width: 100%;
+    color: red;
+    font-size: 1.3rem;
+}
+
+#contents .contents a:hover {
+    text-decoration: underline;
+}
+
+#contents .contents .years {
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+#contents .contents .years .year span {
+    width: 100%;
+    color: white;
+    font-size: 3.2rem;
+    padding-right: 25px;
+    font-weight: bold;
+}
+
+#contents .contents .years .year1 p {
+    width: 100%;
+    margin-top: 5px;
+}
+
+#contents .contents p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+/* 컨셉 사진 */
+#conceptimg {
+    width: 100%;
+    height: auto;
+    background-color: rgba(14, 14, 14, 0.9);
+    background-image: url('../indeximg/bgi1.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+/* #conceptimg .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+} */
+
+/* conceptimg 제목 */
+#conceptimg .container h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.0em;
+    color: white;
+    margin: 0 0 60px 0;
+    padding-top: 60px;
+}
+
+#conceptimg .container p {
+    color: #fff;
+}
+
+#conceptimg img:hover {
+    cursor: pointer;
+}
+
+/* 웨딩 사진 */
+.wdphotography {
+    width: 100%;
+    height: 83vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    perspective: 500px;
+}
+
+.wdphotography img {
+    width: 45%;
+    position: absolute;
+}
+
+.wdphotography img:nth-of-type(1) {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.wdphotography img:nth-of-type(2) {
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.wdphotography img:nth-of-type(3) {
+    top: 100px;
+    left: 100px;
+    z-index: 3;
+}
+
+.wdphotography img:nth-of-type(4) {
+    top: 150px;
+    left: 150px;
+    z-index: 4;
+}
+
+
+/* 웨딩 설명 부분 */
+.wdphotography .information {
+    width: 35%;
+    height: auto;
+    /* background-color: saddlebrown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 0%;
+    text-align: center;
+}
+
+.wdphotography .information h3 {
+    width: 80%;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.wdphotography .information p {
+    width: 80%;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.wdphotography .information form {
+    width: 85%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.wdphotography .information form .input input {
+    width: 85%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgba(250, 250, 250, 0.95);
+    margin-bottom: 10px;
+}
+
+.wdphotography .information form .input textarea {
+    width: 85%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgba(250, 250, 250, 0.95);
+    margin-bottom: 10px;
+}
+
+.wdphotography .information form .input input[type="submit"] {
+    width: 60%;
+    height: auto;
+    border-radius: 25px;
+    background-color: #9d8f8f;
+    margin-bottom: 0;
+    border: none;
+}
+
+.wdphotography .information form .input input:hover {
+    background-color: aliceblue;
+}
+
+.wdphotography .information form .input textarea:hover {
+    background-color: aliceblue;
+}
+
+/* 네이처 사진 */
+.ntphotography {
+    width: 100%;
+    height: 83vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.ntphotography img {
+    width: 45%;
+    position: absolute;
+}
+
+.ntphotography img:nth-of-type(1) {
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.ntphotography img:nth-of-type(2) {
+    top: 50px;
+    right: 50px;
+    z-index: 2;
+}
+
+.ntphotography img:nth-of-type(3) {
+    top: 100px;
+    right: 100px;
+    z-index: 3;
+}
+
+.ntphotography img:nth-of-type(4) {
+    top: 150px;
+    right: 150px;
+    z-index: 4;
+}
+
+
+/* 네이처 설명 부분 */
+.ntphotography .information {
+    width: 35%;
+    height: auto;
+    /* background-color: saddlebrown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0%;
+    text-align: center;
+}
+
+.ntphotography .information h3 {
+    width: 80%;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.ntphotography .information p {
+    width: 80%;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.ntphotography .information form {
+    width: 85%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.ntphotography .information form .input input {
+    width: 85%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgba(250, 250, 250, 0.95);
+    margin-bottom: 10px;
+}
+
+.ntphotography .information form .input textarea {
+    width: 85%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgba(250, 250, 250, 0.95);
+    margin-bottom: 10px;
+}
+
+.ntphotography .information form .input input[type="submit"] {
+    width: 60%;
+    border-radius: 25px;
+    background-color: #9d8f8f;
+    margin-bottom: 0;
+    border: none;
+}
+
+.ntphotography .information form .input input:hover {
+    background-color: aliceblue;
+}
+
+.ntphotography .information form .input textarea:hover {
+    background-color: aliceblue;
+}
+
+#conceptimg .container .na {
+    margin: 80px 0 60px 0;
+}
+
+
+/* 창의적인 사진 */
+.crphotography {
+    width: 100%;
+    height: 83vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.crphotography img {
+    width: 45%;
+    position: absolute;
+}
+
+.crphotography img:nth-of-type(1) {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.crphotography img:nth-of-type(2) {
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.crphotography img:nth-of-type(3) {
+    top: 100px;
+    left: 100px;
+    z-index: 3;
+}
+
+.crphotography img:nth-of-type(4) {
+    top: 150px;
+    left: 150px;
+    z-index: 4;
+}
+
+/* 창의적 사진 설명 부분 */
+.crphotography .information {
+    width: 35%;
+    height: auto;
+    /* background-color: saddlebrown; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    right: 0%;
+    text-align: center;
+}
+
+.crphotography .information h3 {
+    width: 80%;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.crphotography .information p {
+    width: 80%;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.crphotography .information form {
+    width: 85%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.crphotography .information form .input input {
+    width: 85%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgba(250, 250, 250, 0.95);
+    margin-bottom: 10px;
+}
+
+.crphotography .information form .input textarea {
+    width: 85%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 14px;
+    background-color: rgba(250, 250, 250, 0.95);
+    margin-bottom: 10px;
+}
+
+.crphotography .information form .input input[type="submit"] {
+    width: 60%;
+    border-radius: 25px;
+    background-color: #9d8f8f;
+    margin-bottom: 0;
+    border: none;
+}
+
+.crphotography .information form .input input:hover {
+    background-color: aliceblue;
+}
+
+.crphotography .information form .input textarea:hover {
+    background-color: aliceblue;
+}
+
+#conceptimg .container .cr {
+    margin: 80px 0 60px 0;
 }
 
 
