@@ -756,7 +756,9 @@
 
 /* 모바일 */
 @media (max-width: 767px) {
-        /* 가장 큰 박스 */
+
+
+/* 가장 큰 박스 */
 #wrap {
     width: 100%;
     height: auto;

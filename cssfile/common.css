@@ -91,6 +91,16 @@ header .b >ul > li:last-of-type a {
     color: white;
 }
 
+nav ul .blog .subblog {
+    height: 210px;
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    background-color: #666;
+    flex-direction: column;
+    width: 90px;
+}
+
 
 /* footer 부분 */
 
@@ -280,7 +290,7 @@ header .b >ul > li:last-of-type a {
     } */
 
     .small .smallimg span a {
-        font-size: 1.1rem;
+        font-size: 1rem;
         font-weight: bold;
         color: white;
         position: absolute;
@@ -290,11 +300,20 @@ header .b >ul > li:last-of-type a {
     }
 
     header .small .smallimg img {
-        width: 100%;
+        width: 40px;
         height: 40px;
         position: absolute;
         top: 6px;
         left: 7px;
+    }
+
+    .small img:hover {
+        background-color: #666;
+    }
+
+    #a:hover {
+        cursor: pointer;
+        color: red;
     }
 
     nav li a {
@@ -311,13 +330,21 @@ header .b >ul > li:last-of-type a {
         background-color: #ddd;
     }
 
-    .small img:hover {
-        background-color: #666;
+    nav ul .blog .subblog {
+
     }
 
-    #a:hover {
-        cursor: pointer;
-        color: red;
+    nav ul li .subblog {
+        width: 100%;
+        /* position: absolute;
+        top: 60px;
+        left: 15px; */
+        background-color: #666;
+        flex-direction: column;
+    }
+
+    nav ul .blog .subblog li a {
+        padding-left: 15px;
     }
 
     .b {
@@ -326,6 +353,231 @@ header .b >ul > li:last-of-type a {
 
     .b ul li .subblog li a {
         font-size: 14px;
+    }
+
+
+     /* 풋터 반응형... */
+     #footer {
+        width: 100%;
+        height: 90vw;
+        /* 원래 700px */
+        background-color: rgba(17, 17, 17, 0.7);
+        position: relative;
+    }
+    
+    #footer .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* 탑 버튼 */
+    #footer .topbtn {
+        width: 40px;
+        height: 40px;
+        background-color: #e93b32;
+        border-radius: 50%;
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+        z-index: 5;
+    }
+    
+    #footer .topbtn:hover {
+        background-color: #fff;
+    }
+    
+    #footer .topbtn a i {
+        font-size: 31px;
+        transform: rotate(-90deg);
+        padding: 0 0 0 2px;
+        color: black;
+        margin-top: 5px;
+    }
+    
+    #footer li {
+        line-height: 30px;
+    }
+    
+    #footer .foot1 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        flex-flow: row wrap;
+        box-sizing: border-box;
+    }
+    
+    #footer .foot1 .subfoot1 {
+        /* position: relative; */
+        width: 45%;
+        /* height: 250px; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #footer .foot1 .subfoot1 .logo2 {
+        width: 45px;
+        height: 45px;
+        padding-top: 5px;
+    }
+    
+    #footer .foot1 .nag {
+        width: 45%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        /* height: 250px; */
+    }
+
+    #footer .foot1 .use {
+        width: 45%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        /* height: 250px; */
+    }
+
+    #footer .foot1 .inf {
+        width: 45%;
+        /* height: 250px; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+
+    #footer .foot1 .inf ul {
+        width: 100%;
+    }
+
+    #footer .foot1 .inf ul li {
+        width: 30%;
+    }
+
+    #footer .foot1 .inf ul li a img {
+        width: 100%;
+    }
+
+    #footer .nag,.use {
+        padding: 0 0 0 0;
+    }
+    
+    #footer .nag li {
+        line-height: 2;
+    }
+    
+    #footer .nag ul li a:hover {
+        color: red;
+        transition: all 0.5s ease;
+    }
+    
+    #footer .use li {
+        line-height: 2;
+    }
+    
+    #footer .use ul li a:hover {
+        color: red;
+        transition: all 0.5s ease;
+    }
+    
+    #footer .foot1 .subfoot1 span {
+        color: #fff;
+        font-size: 1.5rem;
+        font-weight: bold;
+        /* position: absolute; */
+        top: 5px;
+        left: 60px;
+    }
+    
+    #footer .foot1 .subfoot1 p {
+        color: #fff;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+    #footer .foot1 h4 {
+        color: white;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        padding-top: 5px;
+    }
+    
+    #footer .foot1 ul li a {
+        color: #fff;
+        opacity: 0.95;
+        font-size: 17px;
+    }
+    
+    #footer .inf ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 235px;
+        flex-wrap: wrap;
+    }
+    
+    #footer .foot2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+    
+    #footer .foot2 .subfoot2 p {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1rem;
+        padding-right: 40px;
+    }
+    
+    #footer .foot2 .subfoot2 i {
+        color: pink;
+    }
+    
+    #footer .foot2 .subfoot2 i:hover {
+        color: red;
+    }
+    
+    #footer .foot2 .subfoot2 p a {
+        text-shadow: -2px 0px red, 0px 2px red, 2px 0px red, 0px -2px red;
+    }
+    
+    #footer .foot2 .subfoot2_1 span {
+        color: #fff;
+        font-size: 1.1rem;
+        font-weight: bold;
+        /* position: relative; */
+        padding: 0 65px 0 0;
+    }
+    
+    #footer .foot2 .subfoot2_1 span::before {
+        /* position: absolute; */
+        content: "";
+        width: 43px;
+        height: 2px;
+        background: #ccc;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+    }
+    
+    #footer .foot2 .subfoot2_1 a i {
+        color: #fff;
+        margin-top: 2px;
+        padding-right: 6px;
+    }
+    
+    #footer .foot2 .subfoot2_1 a i:hover {
+        color: red;
+        transition: all 0.5s ease;
     }
 }
 
@@ -338,6 +590,16 @@ header .b >ul > li:last-of-type a {
         align-items: center;
         justify-content: space-around;
         line-height: 1px;
+    }
+
+    .small .smallimg span a {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 7px;
+        left: 60px;
+        line-height: 1;
     }
 
     nav ul li {
@@ -353,9 +615,10 @@ header .b >ul > li:last-of-type a {
         line-height: 60px;
     }
 
-    nav ul li .subblog {
+    nav ul .blog .subblog {
+        height: 183px;
         position: absolute;
-        top: 70px;
+        top: 60px;
         left: 15px;
         background-color: #666;
         flex-direction: column;
@@ -629,7 +892,7 @@ header .b >ul > li:last-of-type a {
         line-height: 70px;
     }
 
-    nav ul li .subblog {
+    nav ul .blog .subblog {
         position: absolute;
         top: 70px;
         left: 15px;
