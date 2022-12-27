@@ -380,6 +380,9 @@ nav ul .blog .subblog {
         display: flex;
         flex-wrap: wrap;
         padding: 30px;
+        height: auto;
+        box-sizing: border-box;
+        padding: 0 15px;
     }
 
     /* 탑 버튼 */
@@ -412,7 +415,7 @@ nav ul .blog .subblog {
     
     #footer .foot1 {
         width: 100%;
-        height: 210vw;
+        height: 250vw;
         display: flex;
         justify-content: space-around; 
         align-items: flex-start;
@@ -427,7 +430,7 @@ nav ul .blog .subblog {
     
     #footer .foot1 .subfoot1 {
         /* position: relative; */
-        width: 100%;
+        width: 95%;
         height: 85px;
         display: flex;
         justify-content: flex-start;
@@ -443,7 +446,7 @@ nav ul .blog .subblog {
     }
     
     #footer .foot1 .nag {
-        width: 50%;
+        width: 95%;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -453,7 +456,7 @@ nav ul .blog .subblog {
     }
 
     #footer .foot1 .use {
-        width: 50%;
+        width: 95%;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -463,7 +466,7 @@ nav ul .blog .subblog {
     }
 
     #footer .foot1 .inf {
-        width: 50%;
+        width: 95%;
         height: 250px;
         display: flex;
         justify-content: flex-start;
@@ -540,13 +543,13 @@ nav ul .blog .subblog {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 235px;
+        /* height: 235px; 일단 여길 보자..*/
         flex-wrap: wrap;
     }
     
     #footer .foot2 {
         width: 100%;
-        height: 5vw;
+        height: 10vw;
         display: flex;
         justify-content: flex-start;
         align-items: center;
