@@ -951,11 +951,14 @@
     background-position: left center;
 }
 
-/* #conceptimg .container {
-    display: flex;
-    flex-wrap: wrap;
+#conceptimg .container {
+    width: calc(100% - 30px);
+    height: 100%;
     margin: 0 auto;
-} */
+    padding: 0 15px 0 15px;
+    /* border: 1px solid orange;
+    background-color: #333; */
+}
 
 /* conceptimg 제목 */
 #conceptimg .container h1 {
@@ -1353,7 +1356,7 @@
 }
 
 #LightPainting .container{
-    width: 100%;
+    width: calc(100% - 30px);
     height: 400vw;
     display: flex;
     flex-wrap: wrap;
@@ -1365,14 +1368,14 @@
     width: 100%;
     height: 0;
     /* text-align: center; */
-    font-size: 3.0em;
+    font-size: 2.5rem;
     color: white;
     margin-bottom: 0;
     padding-top: 0;
 }
 
 #LightPainting .container .light .lt {
-    width: 85%;
+    width: 90%;
     height: auto;
     display: flex;
     justify-content: flex-start;
@@ -1394,7 +1397,7 @@
 
 /* 라이트페인팅 설명 부분 */
 #LightPainting .information {
-    width: 75%;
+    width: 80%;
     height: auto;
     /* background-color: saddlebrown; */
     display: flex;
@@ -1406,16 +1409,16 @@
 }
 
 #LightPainting .information h3 {
-    width: 85%;
-    font-size: 1.5rem;
+    width: 75%;
+    font-size: 1.3rem;
     color: #fff;
     text-align: center;
     margin: 30px 0;
 }
 
 #LightPainting .information p {
-    width: 85%;
-    font-size: 1.3rem;
+    width: 75%;
+    font-size: 1.1rem;
     color: #fff;
     text-align: center;
     margin-bottom: 30px;
@@ -1473,8 +1476,15 @@
 /* 투어리스트 */
 #TOURIST {
     width: 100%;
-    height: 82vw;
+    height: auto;
     background-color: rgba(14, 14, 14, 0.9);
+}
+
+#TOURIST .container {
+    width: calc(100% - 30px);
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
 }
 
 #TOURIST .container .tourblog {
@@ -1485,19 +1495,19 @@
     align-items: center;
     flex-flow: column wrap;
     box-sizing: border-box;
-    /* margin-bottom: -85px; */
+    margin-bottom: 30px;
 }
 
 #TOURIST .container .tourblog h1 {
     color: #fff;
     text-transform: uppercase;
-    font-size: 3.0rem;
+    font-size: 2.5rem;
     padding: 10px 0 5px 0;
 }
 
 #TOURIST .container .tourblog p {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding-bottom: 5px;
 }
 
@@ -1505,23 +1515,26 @@
 /* 이미지 회전 */
 #TOURIST .tourshot {
     width: 100%;
-    height: 50vw;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
     box-sizing: border-box;
+    flex-direction: column;
     /* padding: 30px; */
 }
 
 #TOURIST .container .tourshot .list {
-    width: 30%;
-    height: 38vw;
+    width: 75%;
+    height: 112vw;
     perspective: 1100px;
+    position: relative;
+    margin-bottom: 20px;
 }
 
 #TOURIST .container .tourshot .list .listimg {
     width: 100%;
-    /* height: 450px; */
+    height: auto;
     /* position: relative; */
     transition: all 2s ease;
     transform-style: preserve-3d;
@@ -1555,10 +1568,12 @@
 
 /* 투어 소개 */
 #TOURIST .tourshot .list .tourinfo {
-    width: 85%;
+    width: 100%;
     height: 95px;
     box-sizing: border-box;
     padding: 15px;
+    position: absolute;
+    bottom: 15px;
 }
 
 #TOURIST .tourshot .list .tourinfo span {

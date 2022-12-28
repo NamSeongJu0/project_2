@@ -7,7 +7,7 @@ $(function(){
    });
 
    $(window).resize(function(){
-    if(window.innerWidth >= 767){
+    if(window.innerWidth > 767){
        $('.b').show();
     }
     else{
