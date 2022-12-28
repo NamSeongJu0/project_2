@@ -15,6 +15,16 @@ $(function(){
     }
    });
 
+
+   // 윈도우 사이즈가 767보다 작을 시 br 삭제
+
+//    $(window).resize(function(){
+//     if(window.innerwidth < 767){
+//         $('#section .container #contents .contents:first br:first').removeClass();
+//     }
+//    });
+
+
    // li(BLOG)를 hover하면 안에 있던 subblog가 보여지는 기능
    $(document).ready(function () {
     $('.subblog').hide();
