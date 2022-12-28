@@ -544,7 +544,7 @@ nav ul .blog .subblog {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* height: 235px; 일단 여길 보자..*/
+        /* height: 235px; */
         flex-wrap: wrap;
     }
     
