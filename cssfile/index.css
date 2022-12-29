@@ -835,9 +835,9 @@
 }
 
 #slider .text h1 {
-    width: 100%;
+    width: 95%;
     height: 185px;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #eee;
     letter-spacing: 10px;
     margin-bottom: 0px;
@@ -1006,7 +1006,7 @@
 /* 웨딩 사진 */
 .wdphotography {
     width: 100%;
-    height: 1010px;
+    height: 1150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1018,11 +1018,10 @@
 #conceptimg .container .wdphotography .indeximg {
     width: 100%;
     height: 500px;
-    /* position: relative; */
 }
 
 .wdphotography img {
-    width: 55%;
+    width: 50%;
     position: absolute;
 }
 
@@ -1063,6 +1062,7 @@
     top: 500px;
     right: 0%;
     text-align: center;
+    margin-top: 110px;
 }
 
 .wdphotography .information h3 {
@@ -1082,7 +1082,7 @@
 }
 
 .wdphotography .information form {
-    width: 70%;
+    width: 60%;
     height: auto;
     text-align: center;
     display: flex;
@@ -1133,11 +1133,11 @@
 /* 네이처 사진 */
 .ntphotography {
     width: 100%;
-    height: 1000px;
+    height: 1150px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
     position: relative;
 }
 
@@ -1147,7 +1147,7 @@
 }
 
 .ntphotography img {
-    width: 55%;
+    width: 50%;
     position: absolute;
 }
 
@@ -1189,6 +1189,7 @@
     top: 500px;
     left: 0%;
     text-align: center;
+    margin-top: 110px;
 }
 
 .ntphotography .information h3 {
@@ -1208,7 +1209,7 @@
 }
 
 .ntphotography .information form {
-    width: 70%;
+    width: 60%;
     height: auto;
     text-align: center;
     display: flex;
@@ -1263,11 +1264,11 @@
 /* 창의적인 사진 */
 .crphotography {
     width: 100%;
-    height: 1000px;
+    height: 1150px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
     position: relative;
 }
 
@@ -1277,7 +1278,7 @@
 }
 
 .crphotography img {
-    width: 55%;
+    width: 50%;
     position: absolute;
 }
 
@@ -1318,6 +1319,7 @@
     top: 500px;
     right: 0%;
     text-align: center;
+    margin-top: 110px;
 }
 
 .crphotography .information h3 {
@@ -1338,7 +1340,7 @@
 }
 
 .crphotography .information form {
-    width: 70%;
+    width: 60%;
     height: auto;
     text-align: center;
     display: flex;
@@ -1403,8 +1405,8 @@
 
 #LightPainting .container{
     width: calc(100% - 30px);
-    height: 455vw;
-    display: flex;
+    height: 490vw;
+    /* display: flex; */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -1416,8 +1418,8 @@
     /* text-align: center; */
     font-size: 2.5rem;
     color: white;
-    margin-bottom: 0;
-    padding-top: 0;
+    margin-bottom: 70px;
+    padding-top: 70px;
 }
 
 #LightPainting .container .light .lt {
