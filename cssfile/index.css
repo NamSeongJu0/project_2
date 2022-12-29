@@ -789,13 +789,22 @@
     margin: 0 auto;
 }
 
+#slider .container {
+    width: calc(100% - 30px);
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    /* border: 1px solid orange;
+    background-color: #333; */
+}
+
 #slider .text {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    width: 90%;
-    height: 60vw;
+    width: 100%;
+    height: 450px;
     margin: 0 auto;
 }
 
@@ -806,6 +815,8 @@
 
 #slider .text .text_p {
     width: 300px;
+    height: 35px;
+    font-size: 1rem;
     /* margin: 0 auto; */
     position: relative;
     color: red;
@@ -815,37 +826,37 @@
 #slider .text .text_p::before {
     position: absolute;
     content: "";
-    width: 45px;
+    width: 35px;
     height: 1px;
     background: red;
-    left: -45px;
-    top: 8px;
+    left: -10px;
+    top: 6px;
     transform: translateY(-50%);
 }
 
 #slider .text h1 {
     width: 100%;
-    height: auto;
-    font-size: 4rem;
+    height: 185px;
+    font-size: 2.7rem;
     color: #eee;
     letter-spacing: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 #slider .text p {
     width: 100%;
-    height: auto;
-    font-size: 1.3rem;
+    height: 50px;
+    font-size: 1rem;
     color: #eee;
-    height: 30px;
 }
 
 #slider .text p a {
     border-radius: 20px;
     background-color: #aaa;
     opacity: 0.8;
+    font-size: 1rem;
     color: white;
-    padding: 10px 20px;
+    padding: 5px 15px;
 }
 
 #slider .text p a:hover{
@@ -878,7 +889,7 @@
 
 #section .container {
     width: calc(100% - 30px);
-    height: 100%;
+    height: auto;
     margin: 0 auto;
     padding: 0 15px 0 15px;
     /* border: 1px solid orange;
@@ -887,43 +898,43 @@
 
 #contents {
     width: 100%;
-    height: 98vw;
+    height: 90vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    /* position: relative; */
+    position: relative;
 }
 
 #contents .contents {
-    height: 155px;
+    height: 255px;
 }
 
 #contents .contents .con1 {
-    width: 165px;
+    width: 160px;
     position: relative;
 }
 
 #contents .contents .con1::after {
-    /* position: absolute; */
+    position: absolute;
     content: "";
-    width: 55px;
+    width: 45px;
     height: 1px;
     background: red;
-    top: 8px;
-    right: -65px;
+    top: 7px;
+    right: -30px;
 }
 
 #contents .contents h2 {
     width: 100%;
-    font-size: 2.7rem;
+    font-size: 2.3rem;
     color: white;
 }
 
 #contents .contents a {
     width: 100%;
     color: red;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 #contents .contents a:hover {
@@ -939,7 +950,7 @@
 #contents .contents .years .year span {
     width: 100%;
     color: white;
-    font-size: 3.2rem;
+    font-size: 3rem;
     padding-right: 25px;
     font-weight: bold;
 }
@@ -951,7 +962,7 @@
 
 #contents .contents p {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
@@ -1617,7 +1628,7 @@
 
 /* 주요 컨텐츠 사이즈 */
 .container {
-    width: 100%;
+    width: calc(100% - 30px);
     height: 100%;
     margin: 0 auto;
     padding: 0 15px 0 15px;
