@@ -907,7 +907,7 @@
 }
 
 #contents .contents {
-    height: 220px;
+    height: 200px;
 }
 
 #contents .contents .con1 {
@@ -927,7 +927,7 @@
 
 #contents .contents h2 {
     width: 100%;
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     color: white;
 }
 
@@ -1006,7 +1006,7 @@
 /* 웨딩 사진 */
 .wdphotography {
     width: 100%;
-    height: 1150px;
+    height: calc(510px + 105vw);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1017,7 +1017,7 @@
 
 #conceptimg .container .wdphotography .indeximg {
     width: 100%;
-    height: 500px;
+    height: 105vw;
 }
 
 .wdphotography img {
@@ -1058,11 +1058,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: absolute;
-    top: 500px;
-    right: 0%;
+    position: static;
+    /* top: 500px;
+    right: 0%; */
     text-align: center;
-    margin-top: 60px;
+    /* margin-top: 0; */
 }
 
 .wdphotography .information h3 {
@@ -1114,7 +1114,7 @@
 }
 
 .wdphotography .information form .input input[type="submit"] {
-    width: 60%;
+    width: 55%;
     height: auto;
     border-radius: 25px;
     background-color: #9d8f8f;
@@ -1133,7 +1133,7 @@
 /* 네이처 사진 */
 .ntphotography {
     width: 100%;
-    height: 1150px;
+    height: calc(510px + 105vw);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1143,7 +1143,7 @@
 
 #conceptimg .container .ntphotography .indeximg {
     width: 100%;
-    height: 500px;
+    height: 105vw;
 }
 
 .ntphotography img {
@@ -1185,11 +1185,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: absolute;
-    top: 500px;
-    left: 0%;
+    position: static;
     text-align: center;
-    margin-top: 60px;
 }
 
 .ntphotography .information h3 {
@@ -1241,7 +1238,7 @@
 }
 
 .ntphotography .information form .input input[type="submit"] {
-    width: 60%;
+    width: 55%;
     border-radius: 25px;
     background-color: #9d8f8f;
     margin-bottom: 0;
@@ -1264,7 +1261,7 @@
 /* 창의적인 사진 */
 .crphotography {
     width: 100%;
-    height: 1150px;
+    height:calc(510px + 105vw);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1274,7 +1271,7 @@
 
 #conceptimg .container .crphotography .indeximg {
     width: 100%;
-    height: 500px;
+    height: 105vw;
 }
 
 .crphotography img {
@@ -1315,11 +1312,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: absolute;
-    top: 500px;
-    right: 0%;
+    position: static;
     text-align: center;
-    margin-top: 60px;
+
 }
 
 .crphotography .information h3 {
@@ -1372,7 +1367,7 @@
 }
 
 .crphotography .information form .input input[type="submit"] {
-    width: 60%;
+    width: 55%;
     border-radius: 25px;
     background-color: #9d8f8f;
     margin-bottom: 0;
