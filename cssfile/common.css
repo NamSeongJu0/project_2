@@ -280,6 +280,18 @@ nav ul .blog .subblog {
 
 /* 모바일 부분.... */
 @media (max-width: 767px) {
+
+    /* 헤더 부분 시작... */
+    header {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        background-color: black;
+        height: 60px;
+        opacity: 0.9;
+        z-index: 5;
+    }
+    
     header .small {
         width: 100%;
         display: flex;
@@ -298,7 +310,7 @@ nav ul .blog .subblog {
         font-weight: bold;
         color: white;
         position: absolute;
-        top: 9px;
+        top: 7px;
         left: 57px;
         line-height: 1;
     }
@@ -440,8 +452,8 @@ nav ul .blog .subblog {
     }
 
     #footer .foot1 .subfoot1 .logo2 {
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         padding-top: 5px;
     }
     
@@ -512,22 +524,22 @@ nav ul .blog .subblog {
     
     #footer .foot1 .subfoot1 span {
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: bold;
         /* position: absolute; */
-        top: 5px;
-        left: 60px;
+        top: 4px;
+        left: 50px;
     }
     
     #footer .foot1 .subfoot1 p {
         color: #fff;
-        font-size: 20px;
+        font-size: 15px;
         margin-top: 20px;
     }
     
     #footer .foot1 h4 {
         color: white;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         font-weight: bold;
         margin-bottom: 10px;
         text-transform: uppercase;
@@ -537,7 +549,7 @@ nav ul .blog .subblog {
     #footer .foot1 ul li a {
         color: #fff;
         opacity: 0.95;
-        font-size: 17px;
+        font-size: 15px;
     }
     
     #footer .inf ul {
@@ -577,10 +589,14 @@ nav ul .blog .subblog {
     
     #footer .foot2 .subfoot2_1 span {
         color: #fff;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         font-weight: bold;
         /* position: relative; */
         padding: 0 65px 0 0;
+    }
+
+    #footer .foot2 .subfoot2_1  a {
+        font-size: 0.9rem;
     }
     
     #footer .foot2 .subfoot2_1 span::before {
