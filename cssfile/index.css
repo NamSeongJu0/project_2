@@ -1504,7 +1504,7 @@
 
 #LightPainting .information form .input input[type="submit"] {
     width: 50%;
-    border-radius: auto;
+    border-radius: 25px;
     background-color: #9d8f8f;
     margin-bottom: 0;
     border: none;
@@ -2358,7 +2358,7 @@
 
 #LightPainting .information form .input input[type="submit"] {
     width: 50%;
-    border-radius: auto;
+    border-radius: 25px;
     background-color: #9d8f8f;
     margin-bottom: 0;
     border: none;
