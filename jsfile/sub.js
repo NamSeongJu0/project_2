@@ -60,3 +60,16 @@ $(document).ready(function () {
     });
 });
 
+
+$(function() {           
+    $(".Us").delay(1000).animate({opacity : 1, top: 80}, 800, "swing", function() {
+        $(".home_1").delay(500).animate({opacity : 1, top: 150}, 800, "swing"); 
+    });
+});
+
+// 슬라이드 토글
+$(function(){
+    $('.btn button').click(function(){
+        $('form1').slideToggle();
+    });
+});

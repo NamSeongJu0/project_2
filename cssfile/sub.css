@@ -28,9 +28,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 
-#wrap #slider .About h2 {
+#wrap #slider .About .Us {
+    width: 100%;
+    text-align: center;
     color: white;
     font-weight: bold;
     font-size: 2.5rem;
@@ -51,9 +54,13 @@
     align-items: center;
 }
 
-#wrap #slider .About nav ol li {
+#wrap #slider .About nav ol .home_1 {
+    /* width: 100%; */
+    /* opacity: 0; */
     font-size: 17px;
     font-weight: bold;
+    /* position: absolute;
+    top: 130px; */
 }
 
 #wrap #slider .About nav ol li:nth-child(1) i {
@@ -100,6 +107,28 @@
     padding: 15px;
 }
 
+#wrap #intro .container .passion .pas_1 h3 {
+    font-size: 3rem;
+    font-weight: bolder;
+    background: linear-gradient(to right top, #792154, #f56c60);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+#wrap #intro .container .passion .pas_1 .abtn {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid red;
+    padding: 15px;
+}
+
+#wrap #intro .container .passion .pas_1 .abtn .abtn_1 {
+    color: white;
+    font-size: 18px;
+}
 
 #wrap #intro .container .passion .pas_2 {
     width: 55%;
@@ -124,7 +153,7 @@
     height: 60px;
     border-radius: 50%;
     position: relative;
-    background-color: tomato;
+    background-color: rgb(255, 118, 94);
     top: 0;
     left: 0;
 }
@@ -139,11 +168,99 @@
 }
 
 
-/* section Team */
-#wrap #Team {
+/* section pro */
+#wrap #pro {
     width: 100%;
     height: auto;
     background-color: aqua;
+}
+
+#wrap #pro .container {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    border: 1px solid orange;
+    background-color: #333;
+}
+
+#wrap #pro .container .choose {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#wrap #pro .container .choose .why {
+    width: 100%;
+    height: 40px;
+    background-color: darkkhaki;
+    text-align: center;
+}
+
+#wrap #pro .container .choose .why h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#wrap #pro .container .choose .tech {
+    width: 100%;
+    height: 500px;
+    background-color: brown;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#wrap #pro .container .choose .tech .tech_1 {
+    width: 30%;
+    height: 300px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#wrap #pro .container .choose .tech .tech_1 .intro {
+    text-align: center;
+}
+
+#wrap #pro .container .choose .tech .tech_1 .circle2 {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#wrap #pro .container .choose .tech .tech_1 .circle2 .circle2_1 {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    border-radius: 50%;
+    background-color: tomato;
+}
+
+#wrap #pro .container .choose .tech .tech_1 .circle2 .circle2_1 i {
+    font-size: 35px;
+    height: 35px;
+    position: absolute;
+    color: white;
+    top : 15px;
+    left: 15px;
+}
+
+
+/* Team Line */
+#wrap #Team {
+    width: 100%;
+    height: auto;
+    background-color: blanchedalmond;
 }
 
 #wrap #Team .container {
@@ -155,73 +272,162 @@
     background-color: #333;
 }
 
-#wrap #Team .container .choose {
+#wrap #Team .container .team {
     width: 100%;
-    height: 600px;
+    height: 700px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    margin: 0 auto;
 }
 
-#wrap #Team .container .choose .why {
+#wrap #Team .container .team .our {
     width: 100%;
-    height: 40px;
-    background-color: darkkhaki;
     text-align: center;
-}
-
-#wrap #Team .container .choose .why h2 {
     color: white;
     font-size: 2.5rem;
     font-weight: bold;
 }
 
-#wrap #Team .container .choose .tech {
+#wrap #Team .container .team .Num1 {
     width: 100%;
-    height: 500px;
-    background-color: brown;
+    height: 400px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-#wrap #Team .container .choose .tech .tech_1 {
-    width: 30%;
-    height: 400px;
-    background-color: blueviolet;
+#wrap #Team .container .team .Num1 .human {
+    width: 180px;
+    height: 300px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: white;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 2px lightgray;
+    border-radius: 15px;
+}
+
+#wrap #Team .container .team .Num1 .human .img1 img {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    margin: 25px 0;
+}
+
+#wrap #Team .container .team .Num1 .human h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#wrap #Team .container .team .Num1 .human span {
+    color: red;
+    font-size: 14px;
+}
+
+#wrap #Team .container .team .Num1 .human .iimg a i {
+    color: silver;
+    font-size: 20px;
+    margin-top: 25px;
+    padding: 0 10px;
+}
+
+#wrap #Team .container .team .Num1 .human .iimg a i:hover {
+    color: red;
+    transition: all 0.7s ease;
+}
+
+
+/* Map Line */
+#wrap #MAP {
+    width: 100%;
+    height: auto;
+    background-color: cornflowerblue;
+}
+
+#wrap #MAP .container {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    border: 1px solid orange;
+    background-color: #333;
+}
+
+#wrap #MAP .container .goggle {
+    width: 100%;
+    height: 600px;
+    background-color: #f56c60;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    position: relative;
 }
 
-#wrap #Team .container .choose .tech .tech_1 .intro {
+#wrap #MAP .container .goggle .ibtn_form {
+    width: 100%;
+    height: 450px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#wrap #MAP .container .goggle .ibtn_form .form_1 {
+    width: 20%;
+    height: 350px;
+    background-color: chocolate;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
 }
 
-#wrap #Team .container .choose .tech .tech_1 .circle2 {
-    position: absolute;
-    top: -35px;
-    left: 50%;
-    transform: translate(-50%);
+#wrap #MAP .container .goggle .ibtn_form .form_1 .btn {
+    width: 100%;
+    height: auto;
 }
 
-#wrap #Team .container .choose .tech .tech_1 .circle2 .circle2_1 {
-    width: 75px;
-    height: 75px;
-    position: relative;
-    border-radius: 50%;
-    background-color: tomato;
-}
-
-#wrap #Team .container .choose .tech .tech_1 .circle2 .circle2_1 i {
-    font-size: 45px;
-    height: 45px;
-    position: absolute;
+#wrap #MAP .container .goggle .ibtn_form .form_1 .btn button {
+    width: 70px;
+    height: 25px;
+    background-color: rosybrown;
     color: white;
-    top : 15px;
-    left: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#wrap #MAP .container .goggle .ibtn_form .form_1 form {
+    width: 100%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+}
+
+#wrap #MAP .container .goggle .ibtn_form .form_1 form input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+#wrap #MAP .container .goggle .ibtn_form .form_1 form input[type='submit'] {
+    width: 30%;
+    border-radius: 10px;
+}
+
+#wrap #MAP .container .goggle .ibtn_form .form_1 form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#wrap #MAP .container .goggle .ibtn_form .form_1 form .map iframe {
+    width: 100%;
+    height: 400px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 20px;
 }
