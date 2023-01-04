@@ -356,7 +356,7 @@
     background-color: #333;
 }
 
-#wrap #MAP .container .goggle {
+#wrap #MAP .container .google {
     width: 100%;
     height: 600px;
     background-color: #f56c60;
@@ -366,7 +366,7 @@
     flex-direction: column;
 }
 
-#wrap #MAP .container .goggle .ibtn_form {
+#wrap #MAP .container .google .ibtn_form {
     width: 100%;
     height: 450px;
     background-color: cadetblue;
@@ -375,7 +375,7 @@
     align-items: center;
 }
 
-#wrap #MAP .container .goggle .ibtn_form .form_1 {
+#wrap #MAP .container .google .ibtn_form .form_1 {
     width: 20%;
     height: 400px;
     background-color: chocolate;
@@ -386,12 +386,12 @@
     text-align: center;
 }
 
-#wrap #MAP .container .goggle .ibtn_form .form_1 .btn {
+#wrap #MAP .container .google .ibtn_form .form_1 .btn {
     width: 100%;
     height: auto;
 }
 
-#wrap #MAP .container .goggle .ibtn_form .form_1 .btn button {
+#wrap #MAP .container .google .ibtn_form .form_1 .btn button {
     width: 70px;
     height: 45px;
     background-color: rosybrown;
@@ -400,7 +400,7 @@
     border-radius: 15px;
 }
 
-#wrap #MAP .container .goggle .ibtn_form .form_1 .btn button.on {
+#wrap #MAP .container .google .ibtn_form .form_1 .btn button.on {
     height: 25px;
 }
 
@@ -408,7 +408,7 @@
 
 }
 
-#wrap #MAP .container .goggle .ibtn_form .form_1 form {
+#wrap #MAP .container .google .ibtn_form .form_1 form {
     width: 100%;
     border: 1px solid black;
     box-sizing: border-box;
@@ -417,26 +417,29 @@
     display: none;
 }
 
-#wrap #MAP .container .goggle .ibtn_form .form_1 form input {
+#wrap #MAP .container .google .ibtn_form .form_1 form input {
     width: 100%;
     height: 30px;
     margin-bottom: 15px;
 }
 
-#wrap #MAP .container .goggle .ibtn_form .form_1 form input[type='submit'] {
+#wrap #MAP .container .google .ibtn_form .form_1 form input[type='submit'] {
     width: 30%;
     border-radius: 10px;
 }
 
-#wrap #MAP .container .goggle .ibtn_form .form_1 form textarea {
+#wrap #MAP .container .google .ibtn_form .form_1 form textarea {
     width: 100%;
     margin-bottom: 15px;
 }
 
-#wrap #MAP .container .goggle .ibtn_form .form_1 form .map {
-    width: 100%;
-    height: 400px;
+#wrap #MAP .container .google .ibtn_form .map {
     box-sizing: border-box;
     border-radius: 25px;
     overflow: hidden;
+}
+
+#wrap #MAP .container .google .ibtn_form .map iframe {
+    width: 500px;
+    height: 400px;
 }
