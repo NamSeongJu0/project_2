@@ -123,6 +123,7 @@
     border-radius: 20px;
     border: 2px solid red;
     padding: 15px;
+    margin-top: 60px;
 }
 
 #wrap #intro .container .passion .pas_1 .abtn .abtn_1 {
@@ -376,7 +377,7 @@
 
 #wrap #MAP .container .goggle .ibtn_form .form_1 {
     width: 20%;
-    height: 350px;
+    height: 400px;
     background-color: chocolate;
     display: flex;
     justify-content: space-evenly;
@@ -392,11 +393,19 @@
 
 #wrap #MAP .container .goggle .ibtn_form .form_1 .btn button {
     width: 70px;
-    height: 25px;
+    height: 45px;
     background-color: rosybrown;
     color: white;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 15px;
+}
+
+#wrap #MAP .container .goggle .ibtn_form .form_1 .btn button.on {
+    height: 25px;
+}
+
+#wrap #MAP .container .goggle .ibtn_form .form_1 .btn button:hover {
+
 }
 
 #wrap #MAP .container .goggle .ibtn_form .form_1 form {
@@ -405,6 +414,7 @@
     box-sizing: border-box;
     padding: 10px;
     border: none;
+    display: none;
 }
 
 #wrap #MAP .container .goggle .ibtn_form .form_1 form input {
@@ -423,11 +433,10 @@
     margin-bottom: 15px;
 }
 
-#wrap #MAP .container .goggle .ibtn_form .form_1 form .map iframe {
+#wrap #MAP .container .goggle .ibtn_form .form_1 form .map {
     width: 100%;
     height: 400px;
-    border: 2px solid black;
     box-sizing: border-box;
-    padding: 15px;
-    border-radius: 20px;
+    border-radius: 25px;
+    overflow: hidden;
 }
