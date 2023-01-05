@@ -23,7 +23,7 @@
 /* slider About line */
 #wrap #slider .About {
     width: 100%;
-    height: 400px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,6 +44,7 @@
     width: 100%;
     height: 50px;
     background-color: antiquewhite;
+    position: relative;
 }
 
 #wrap #slider .About nav ol {
@@ -52,6 +53,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    margin-top: 1%;
 }
 
 #wrap #slider .About nav ol .home_1 {
@@ -159,6 +162,24 @@
     left: 0;
 }
 
+#wrap #intro .container .passion .pas_2 .circle1 a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    border-radius: 50%;
+    background-color: transparent;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 2px solid #fc6060;
+    -webkit-animation: video-icon 1200ms linear infinite;
+    animation: video-icon 1200ms linear infinite;
+    z-index: -10;
+}
+
 #wrap #intro .container .passion .pas_2 .circle1 a i {
     font-size: 40px;
     height: 40px;
@@ -197,14 +218,14 @@
 
 #wrap #pro .container .choose .why {
     width: 100%;
-    height: 40px;
+    height: 50px;
     background-color: darkkhaki;
     text-align: center;
 }
 
 #wrap #pro .container .choose .why h2 {
     color: white;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -284,9 +305,14 @@
 
 #wrap #Team .container .team .our {
     width: 100%;
+    height: 50px;
     text-align: center;
+    background-color: darkkhaki;
+}
+
+#wrap #Team .container .team .our h2 {
     color: white;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
@@ -366,6 +392,12 @@
     flex-direction: column;
 }
 
+#wrap #MAP .container .google h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
 #wrap #MAP .container .google .ibtn_form {
     width: 100%;
     height: 450px;
@@ -391,13 +423,31 @@
     height: auto;
 }
 
+.click {
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.click.on {            
+    opacity: 0.8;            
+}
+
 #wrap #MAP .container .google .ibtn_form .form_1 .btn button {
-    width: 70px;
+    width: 75px;
     height: 45px;
     background-color: rosybrown;
     color: white;
     border: 1px solid black;
     border-radius: 15px;
+    text-transform: uppercase;
 }
 
 #wrap #MAP .container .google .ibtn_form .form_1 .btn button.on {
@@ -443,3 +493,4 @@
     width: 500px;
     height: 400px;
 }
+

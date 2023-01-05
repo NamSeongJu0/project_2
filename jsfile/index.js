@@ -15,14 +15,16 @@ $(function(){
     }
    });
 
-
-   // 윈도우 사이즈가 767보다 작을 시 br 삭제
-
-//    $(window).resize(function(){
-//     if(window.innerwidth < 767){
-//         $('#section .container #contents .contents:first br:first').removeClass();
-//     }
-//    });
+   
+// 마우스 클릭 효과
+function clickEffect(e) {
+    var d = document.createElement("div");
+    d.className = "clickEffect";
+    d.style.top = e.clientY + "px"; d.style.left = e.clientX + "px";
+    document.body.appendChild(d);
+    d.addEventListener('animationend', function () { d.parentElement.removeChild(d); }.bind(this));
+}
+document.addEventListener('click', clickEffect);
 
 
    // li(BLOG)를 hover하면 안에 있던 subblog가 보여지는 기능
