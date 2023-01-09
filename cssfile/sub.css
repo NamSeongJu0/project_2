@@ -133,6 +133,7 @@
     background: linear-gradient(to right top, #b63580, #ff7c70);
     color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
     margin-bottom: 30px;
 }
 
@@ -142,6 +143,12 @@
 }
 
 #wrap #intro .container .passion .pas_1 .abtn {
+    margin-top: 60px;
+}
+
+#wrap #intro .container .passion .pas_1 .abtn .abtn_1 {
+    color: white;
+    font-size: 18px;
     width: 150px;
     height: 50px;
     text-align: center;
@@ -149,16 +156,13 @@
     border-radius: 20px;
     border: 2px solid red;
     padding: 15px;
-    margin-top: 60px;
-}
-
-#wrap #intro .container .passion .pas_1 .abtn .abtn_1 {
-    color: white;
-    font-size: 18px;
+    background-color: silver;
 }
 
 #wrap #intro .container .passion .pas_1 .abtn .abtn_1:hover {
     color: red;
+    background-color: white;
+    transition: all 0.7s ease;
 }
 
 #wrap #intro .container .passion .pas_2 {
@@ -308,7 +312,7 @@
     margin-bottom: 30px;
 }
 
-#wrap #pro .container .choose .tech .tech_1 .intro p {
+#wrap #pro .container .choose .tech .tech_1 .intro p     {
     color: white;
     font-size: 1.2rem;
 }
@@ -515,7 +519,9 @@
 }
 
 #wrap #MAP .container .goggle .ibtn_form .form_1 .btn button:hover {
-
+    background-color: white;
+    color: red;
+    transition: all 0.7s ease;
 }
 
 #wrap #MAP .container .google .ibtn_form .form_1 form {
@@ -555,3 +561,20 @@
     height: 400px;
 }
 
+
+/* 모바일 */
+@media (max-width: 767px) {
+
+}
+
+
+/* 중간 사이즈 */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+}
+
+
+/* 1200px 이상 */
+@media (min-width: 1200px) {
+
+}

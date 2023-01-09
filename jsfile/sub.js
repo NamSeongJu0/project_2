@@ -23,7 +23,7 @@ $(document).ready(function() {
     $(".btn button").mousemove(function(event) {
         var x = event.pageX;
         var y = event.pageY;
-        $(".click").css({left: x +10 , top: y - 40}).addClass("on");
+        $(".click").css({left: x +5 , top: y -40}).addClass("on");
     }).mouseleave(function() {
         $(".click").removeClass("on");
     });
