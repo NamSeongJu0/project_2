@@ -606,6 +606,7 @@
         font-weight: bold;
         font-size: 2rem;
         margin-bottom: 0;
+        margin-top: 15px
     }
     
     #wrap #slider .About nav {
@@ -690,10 +691,10 @@
     
     #wrap #intro .container .passion .pas_1 {
         width: 65%;
-        height: 41vw;
+        height: 50vw;
         background-color: aquamarine;
         box-sizing: border-box;
-        padding: 15px;
+        padding: 10px;
     }
     
     #wrap #intro .container .passion .pas_1 h3 {
@@ -828,7 +829,7 @@
     
     #wrap #pro .container .choose {
         width: 100%;
-        height: 150vw;
+        height: 200vw;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -850,7 +851,7 @@
     
     #wrap #pro .container .choose .tech {
         width: 100%;
-        height: 120vw;
+        height: 175vw;
         background-color: brown;
         display: flex;
         justify-content: space-evenly;
@@ -859,8 +860,8 @@
     }
     
     #wrap #pro .container .choose .tech .tech_1 {
-        width: 45%;
-        height: 30vw;
+        width: 65%;
+        height: 45vw;
         background-color: black;
         display: flex;
         justify-content: space-evenly;
@@ -935,7 +936,7 @@
     
     #wrap #Team .container .team {
         width: 100%;
-        height: 85vw;
+        height: 260vw;
         background-color: #b63580;
         display: flex;
         justify-content: space-evenly;
@@ -945,32 +946,33 @@
     
     #wrap #Team .container .team .our {
         width: 100%;
-        height: 40px;
+        height: 30px;
         text-align: center;
         background-color: darkkhaki;
     }
     
     #wrap #Team .container .team .our h2 {
         color: white;
-        font-size: 2.7rem;
+        font-size: 2rem;
         font-weight: bold;
     }
     
     #wrap #Team .container .team .Num1 {
         width: 85%;
-        height: 72vw;
+        height: 240vw;
         background-color: aqua;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        flex-direction: column;
         box-sizing: border-box;
         padding: 10px;
     }
     
     #wrap #Team .container .team .Num1 .human {
-        width: 34%;
-        height: 250px;
+        width: 55%;
+        height: 220px;
         text-align: center;
         box-sizing: border-box;
         padding: 5px;
@@ -981,8 +983,8 @@
     }
     
     #wrap #Team .container .team .Num1 .human .img1 img {
-        width: 135px;
-        height: 135px;
+        width: 85px;
+        height: 85px;
         border-radius: 50%;
         margin: 10px 0;
     }
@@ -1026,7 +1028,7 @@
     
     #wrap #MAP .container .google {
         width: 100%;
-        height: 75vw;
+        height: 220vw;
         background-color: #f56c60;
         display: flex;
         justify-content: space-evenly;
@@ -1037,7 +1039,7 @@
     #wrap #MAP .container .google h2 {
         width: 100%;
         color: white;
-        font-size: 2.7rem;
+        font-size: 2rem;
         font-weight: bold;
         text-align: center;
         background-color: antiquewhite;
@@ -1045,16 +1047,17 @@
     
     #wrap #MAP .container .google .ibtn_form {
         width: 85%;
-        height: 55vw;
+        height: 200vw;
         background-color: cadetblue;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        flex-direction: column;
     }
     
     #wrap #MAP .container .google .ibtn_form .form_1 {
-        width: 30%;
-        height: 400px;
+        width: 65%;
+        height: 40vw;
         background-color: chocolate;
         display: flex;
         justify-content: space-evenly;
@@ -1069,7 +1072,7 @@
     }
     
     .click {
-        width: 150px;
+        width: 120px;
         height: 30px;
         border-radius: 20px;
         background: #333;
@@ -1132,8 +1135,8 @@
     }
     
     #wrap #MAP .container .google .ibtn_form .map {
-        width: 50%;
-        height: 400px;
+        width: 65%;
+        height: auto;
         box-sizing: border-box;
         border-radius: 25px;
         overflow: hidden;
@@ -1141,7 +1144,8 @@
     
     #wrap #MAP .container .google .ibtn_form .map iframe {
         width: 500px;
-        height: 400px;
+        height: 410px;
+        border-radius: 25px;
     }
 }
 

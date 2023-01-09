@@ -146,6 +146,16 @@ nav ul .blog .subblog {
     position: relative;
 }
 
+#footer .container {
+    width: calc(100% - 30px);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
 
 /* 탑 버튼 */
 #footer .topbtn {
@@ -419,7 +429,7 @@ nav ul .blog .subblog {
 
 
      /* 풋터 반응형 */
-     #footer {
+    #footer {
         width: 100%;
         height: auto;
         /* 원래 700px */
@@ -428,6 +438,7 @@ nav ul .blog .subblog {
     }
     
     #footer .container {
+        width: calc(100% - 30px);
         display: flex;
         flex-wrap: wrap;
         padding: 30px;
@@ -743,8 +754,13 @@ nav ul .blog .subblog {
     }
     
     #footer .container {
+        width: calc(100% - 30px);
         display: flex;
         flex-wrap: wrap;
+        padding: 30px;
+        height: auto;
+        box-sizing: border-box;
+        padding: 0 15px;
     }
 
     /* 탑 버튼 */
