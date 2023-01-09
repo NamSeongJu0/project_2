@@ -15,15 +15,13 @@
     height: 100%;
     margin: 0 auto;
     padding: 0 15px 0 15px;
-    border: 1px solid orange;
-    background-color: #333;
 }
 
 
 /* slider About line */
 #wrap #slider .About {
     width: 100%;
-    height: 350px;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +41,6 @@
 #wrap #slider .About nav {
     width: 100%;
     height: 50px;
-    background-color: antiquewhite;
     position: relative;
 }
 
@@ -73,6 +70,7 @@
 
 #wrap #slider .About nav ol li a:hover {
     color: red;
+    transition: all 0.7s ease-in;
 }
 
 #wrap #slider .About nav ol li:last-child {
@@ -191,6 +189,7 @@
     background-color: rgb(255, 118, 94);
 }
 
+/* 파동 효과 */
 #wrap #intro .container .passion .pas_2 .circle1::after {
     content: '';
     position: absolute;
@@ -211,8 +210,10 @@
 
 #wrap #intro .container .passion .pas_2 .circle1:hover::after {
     border: 2px solid white;
+    transition: all 0.7s ease-in;
 }
 
+/* 파동 애니메이션 */
 @keyframes wave {
     0% {
         opacity: 1;
@@ -291,13 +292,14 @@
 #wrap #pro .container .choose .tech .tech_1 {
     width: 30%;
     height: 300px;
-    background-color: blueviolet;
+    background-color: black;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     position: relative;
     border-radius: 20px;
+    border: 1px solid white;
 }
 
 #wrap #pro .container .choose .tech .tech_1 .intro {
@@ -310,6 +312,10 @@
     color: white;
     font-size: 1.7rem;
     margin-bottom: 30px;
+}
+
+#wrap #pro .container .choose .tech .tech_1 .intro h4:hover {
+    color: red;
 }
 
 #wrap #pro .container .choose .tech .tech_1 .intro p     {
@@ -389,7 +395,7 @@
 }
 
 #wrap #Team .container .team .Num1 .human {
-    width: 180px;
+    width: 190px;
     height: 300px;
     text-align: center;
     box-sizing: border-box;
@@ -507,7 +513,7 @@
 #wrap #MAP .container .google .ibtn_form .form_1 .btn button {
     width: 75px;
     height: 45px;
-    background-color: rosybrown;
+    background-color: silver;
     color: white;
     border: 1px solid black;
     border-radius: 15px;
@@ -518,10 +524,11 @@
     height: 25px;
 }
 
-#wrap #MAP .container .goggle .ibtn_form .form_1 .btn button:hover {
+#wrap #MAP .container .google .ibtn_form .form_1 .btn button:hover {
     background-color: white;
     color: red;
     transition: all 0.7s ease;
+    cursor: pointer;
 }
 
 #wrap #MAP .container .google .ibtn_form .form_1 form {
@@ -570,7 +577,573 @@
 
 /* 중간 사이즈 */
 @media (min-width: 768px) and (max-width: 1199px) {
+    #wrap #slider {
+        width: 100%;
+        height: auto;
+        background-image: url('../subimg/38.jpg.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+        /* 주요 컨텐츠 사이즈 */
+    #wrap #slider .container {
+        width: calc(100% - 30px);
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 15px 0 15px;
+    }
+    
+    
+    /* slider About line */
+    #wrap #slider .About {
+        width: 100%;
+        height: 35vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    #wrap #slider .About .Us {
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    
+    #wrap #slider .About nav {
+        width: 100%;
+        height: 50px;
+        position: relative;
+    }
+    
+    #wrap #slider .About nav ol {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-top: 1%;
+    }
+    
+    #wrap #slider .About nav ol .home_1 {
+        /* width: 100%; */
+        /* opacity: 0; */
+        font-size: 17px;
+        font-weight: bold;
+        /* position: absolute;
+        top: 130px; */
+    }
+    
+    #wrap #slider .About nav ol li a {
+        color: white;
+        font-size: 16px;
+    }
+    
+    #wrap #slider .About nav ol li a:hover {
+        color: red;
+        transition: all 0.7s ease-in;
+    }
+    
+    #wrap #slider .About nav ol li:last-child {
+        color: red;
+    }
+    
+    #wrap #slider .About nav ol li:last-child span {
+        color: white;
+    }
+    
+    #wrap #slider .About nav ol li:nth-child(1) i {
+        padding-right: 5px;
+        font-weight: bold;
+    }
+    
+    #wrap #slider .About nav ol li:nth-child(2) i {
+        padding-right: 13px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    
+    /* section intro */
+    #wrap #intro {
+        width: 100%;
+        height: auto;
+        background-color: #333;
+    }
+    
+    #wrap #intro .container {
+        width: calc(100% - 30px);
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 15px 0 15px;
+    }
+    
+    #wrap #intro .container .passion {
+        width: 100%;
+        height: 55vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #wrap #intro .container .passion .pas_1 {
+        width: 45%;
+        height: 32vw;
+        background-color: aquamarine;
+        box-sizing: border-box;
+        padding: 15px;
+    }
+    
+    #wrap #intro .container .passion .pas_1 h3 {
+        font-size: 2.7rem;
+        font-weight: bolder;
+        background: linear-gradient(to right top, #b63580, #ff7c70);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        margin-bottom: 15px;
+    }
+    
+    #wrap #intro .container .passion .pas_1 p {
+        color: white;
+        font-size: 1.3rem;
+    }
+    
+    #wrap #intro .container .passion .pas_1 .abtn {
+        margin-top: 30px;
+    }
+    
+    #wrap #intro .container .passion .pas_1 .abtn .abtn_1 {
+        color: white;
+        font-size: 16px;
+        width: 120px;
+        height: 30px;
+        text-align: center;
+        box-sizing: border-box;
+        border-radius: 20px;
+        border: 2px solid red;
+        padding: 10px;
+        background-color: silver;
+    }
+    
+    #wrap #intro .container .passion .pas_1 .abtn .abtn_1:hover {
+        color: red;
+        background-color: white;
+        transition: all 0.7s ease;
+    }
+    
+    #wrap #intro .container .passion .pas_2 {
+        width: 45%;
+        height: auto;
+        position: relative;
+    }
+    
+    #wrap #intro .container .passion .pas_2 img {
+        width: 100%;
+        height: 370px;
+    }
+    
+    #wrap #intro .container .passion .pas_2 .circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #wrap #intro .container .passion .pas_2 .circle1 {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: relative;
+        background-color: rgb(255, 118, 94);
+    }
+    
+    /* 파동 효과 */
+    #wrap #intro .container .passion .pas_2 .circle1::after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 0%;
+        border-radius: 50%;
+        background-color: transparent;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border: 2px solid rgb(255, 118, 94);
+        -webkit-animation: video-icon 1200ms linear infinite;
+        animation: wave 1200ms linear infinite;
+        z-index: -10;
+    }
+    
+    #wrap #intro .container .passion .pas_2 .circle1:hover::after {
+        border: 2px solid white;
+        transition: all 0.7s ease-in;
+    }
+    
+    /* 파동 애니메이션 */
+    @keyframes wave {
+        0% {
+            opacity: 1;
+            width: 0.5em;
+            height: 0.5em;
+            border-width: 0.3rem;
+        }
+    
+        100% {
+            opacity: 0.1;
+            width: 10em;
+            height: 10em;
+            border-width: 0.01rem;
+        }
+    }
+    
+    #wrap #intro .container .passion .pas_2 .circle1 a i {
+        font-size: 33px;
+        line-height: 32px;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    
+    /* section pro */
+    #wrap #pro {
+        width: 100%;
+        height: auto;
+        background-color: aqua;
+    }
+    
+    #wrap #pro .container {
+        width: calc(100% - 30px);
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 15px 0 15px;
+    }
+    
+    #wrap #pro .container .choose {
+        width: 100%;
+        height: 60vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    #wrap #pro .container .choose .why {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+    }
+    
+    #wrap #pro .container .choose .why h2 {
+        color: white;
+        font-size: 2.7rem;
+        font-weight: bold;
+    }
+    
+    #wrap #pro .container .choose .tech {
+        width: 100%;
+        height: 50vw;
+        background-color: brown;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #wrap #pro .container .choose .tech .tech_1 {
+        width: 28%;
+        height: 30vw;
+        background-color: black;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        border-radius: 20px;
+        border: 1px solid white;
+    }
+    
+    #wrap #pro .container .choose .tech .tech_1 .intro {
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    
+    #wrap #pro .container .choose .tech .tech_1 .intro h4 {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
 
+    #wrap #pro .container .choose .tech .tech_1 .intro h4:hover {
+        color: red;
+    }
+    
+    #wrap #pro .container .choose .tech .tech_1 .intro p     {
+        color: white;
+        font-size: 1.1rem;
+    }
+    
+    #wrap #pro .container .choose .tech .tech_1 .circle2 {
+        position: absolute;
+        top: -35px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    #wrap #pro .container .choose .tech .tech_1 .circle2 .circle2_1 {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        border-radius: 50%;
+        background-color: tomato;
+    }
+    
+    #wrap #pro .container .choose .tech .tech_1 .circle2 .circle2_1 i {
+        font-size: 30px;
+        height: 30px;
+        position: absolute;
+        color: white;
+        top : 15px;
+        left: 15px;
+    }
+    
+    
+    /* Team Line */
+    #wrap #Team {
+        width: 100%;
+        height: auto;
+        background-color: blanchedalmond;
+    }
+    
+    #wrap #Team .container {
+        width: calc(100% - 30px);
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 15px 0 15px;
+    }
+    
+    #wrap #Team .container .team {
+        width: 100%;
+        height: 85vw;
+        background-color: #b63580;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #wrap #Team .container .team .our {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        background-color: darkkhaki;
+    }
+    
+    #wrap #Team .container .team .our h2 {
+        color: white;
+        font-size: 2.7rem;
+        font-weight: bold;
+    }
+    
+    #wrap #Team .container .team .Num1 {
+        width: 85%;
+        height: 72vw;
+        background-color: aqua;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    
+    #wrap #Team .container .team .Num1 .human {
+        width: 34%;
+        height: 250px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 5px;
+        background-color: white;
+        margin-bottom: 15px;
+        box-shadow: 2px 2px 2px lightgray;
+        border-radius: 15px;
+    }
+    
+    #wrap #Team .container .team .Num1 .human .img1 img {
+        width: 135px;
+        height: 135px;
+        border-radius: 50%;
+        margin: 10px 0;
+    }
+    
+    #wrap #Team .container .team .Num1 .human h4 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    #wrap #Team .container .team .Num1 .human span {
+        color: red;
+        font-size: 12px;
+    }
+    
+    #wrap #Team .container .team .Num1 .human .iimg a i {
+        color: silver;
+        font-size: 18px;
+        margin-top: 15px;
+        padding: 0 10px;
+    }
+    
+    #wrap #Team .container .team .Num1 .human .iimg a i:hover {
+        color: red;
+        transition: all 0.7s ease;
+    }
+    
+    
+    /* Map Line */
+    #wrap #MAP {
+        width: 100%;
+        height: auto;
+        background-color: cornflowerblue;
+    }
+    
+    #wrap #MAP .container {
+        width: calc(100% - 30px);
+        height: 100%;
+        margin: 0 auto;
+        padding: 0 15px 0 15px;
+    }
+    
+    #wrap #MAP .container .google {
+        width: 100%;
+        height: 75vw;
+        background-color: #f56c60;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #wrap #MAP .container .google h2 {
+        width: 100%;
+        color: white;
+        font-size: 2.7rem;
+        font-weight: bold;
+        text-align: center;
+        background-color: antiquewhite;
+    }
+    
+    #wrap #MAP .container .google .ibtn_form {
+        width: 85%;
+        height: 55vw;
+        background-color: cadetblue;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #wrap #MAP .container .google .ibtn_form .form_1 {
+        width: 30%;
+        height: 400px;
+        background-color: chocolate;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #wrap #MAP .container .google .ibtn_form .form_1 .btn {
+        width: 100%;
+        height: auto;
+    }
+    
+    .click {
+        width: 150px;
+        height: 30px;
+        border-radius: 20px;
+        background: #333;
+        color: #fff;
+        text-align: center;
+        line-height: 30px;
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .click.on {            
+        opacity: 0.8;            
+    }
+    
+    #wrap #MAP .container .google .ibtn_form .form_1 .btn button {
+        width: 75px;
+        height: 45px;
+        background-color: silver;
+        color: white;
+        border: 1px solid black;
+        border-radius: 15px;
+        text-transform: uppercase;
+    }
+    
+    #wrap #MAP .container .google .ibtn_form .form_1 .btn button.on {
+        height: 25px;
+    }
+    
+    #wrap #MAP .container .google .ibtn_form .form_1 .btn button:hover {
+        background-color: white;
+        color: red;
+        transition: all 0.7s ease;
+        cursor: pointer;
+    }
+    
+    #wrap #MAP .container .google .ibtn_form .form_1 form {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 15px;
+        display: none;
+    }
+    
+    #wrap #MAP .container .google .ibtn_form .form_1 form input {
+        width: 100%;
+        height: 30px;
+        margin-bottom: 15px;
+    }
+    
+    #wrap #MAP .container .google .ibtn_form .form_1 form input[type='submit'] {
+        width: 30%;
+        border-radius: 10px;
+    }
+    
+    #wrap #MAP .container .google .ibtn_form .form_1 form textarea {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    #wrap #MAP .container .google .ibtn_form .map {
+        width: 50%;
+        height: 400px;
+        box-sizing: border-box;
+        border-radius: 25px;
+        overflow: hidden;
+    }
+    
+    #wrap #MAP .container .google .ibtn_form .map iframe {
+        width: 500px;
+        height: 400px;
+    }
 }
 
 

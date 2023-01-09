@@ -6,6 +6,8 @@ $(function () {
     });
 });
 
+
+// #intro 부분
 $(function(){
     $('.circle1').hover(function(){
         $('.circle1 a i').css('color', 'red');
@@ -13,9 +15,8 @@ $(function(){
     }, function(){
         $('.circle1 i').css('color', 'white');
         $('.circle1').css('background-color', 'rgb(255, 118, 94)');
-    });
-   
-})
+    });  
+});
 
 
 // 버튼 클릭 유도
