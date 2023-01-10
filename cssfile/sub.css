@@ -928,7 +928,7 @@
     
     #wrap #Team .container .team {
         width: 100%;
-        height: 260vw;
+        height: 160vh;
         background-color: #b63580;
         display: flex;
         justify-content: space-evenly;
@@ -951,7 +951,7 @@
     
     #wrap #Team .container .team .Num1 {
         width: 85%;
-        height: 240vw;
+        height: 150vh;
         background-color: aqua;
         display: flex;
         justify-content: space-evenly;
@@ -969,7 +969,7 @@
         box-sizing: border-box;
         padding: 5px;
         background-color: white;
-        margin-bottom: 15px;
+        margin-bottom: 0;
         box-shadow: 2px 2px 2px lightgray;
         border-radius: 15px;
     }
@@ -1128,15 +1128,15 @@
     
     #wrap #MAP .container .google .ibtn_form .map {
         width: 65%;
-        height: auto;
+        height: 400px;
         box-sizing: border-box;
         border-radius: 25px;
         overflow: hidden;
     }
     
     #wrap #MAP .container .google .ibtn_form .map iframe {
-        width: 500px;
-        height: 410px;
+        width: 100%;
+        height: 400px;
         border-radius: 25px;
     }
 }
