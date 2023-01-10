@@ -116,9 +116,9 @@
 #contents .contents .con1::after {
     position: absolute;
     content: "";
-    width: 60px;
+    width: 80px;
     height: 1px;
-    background: #d3d3d4;
+    background: red;
     top: 230px;
     right: 255px;
 }

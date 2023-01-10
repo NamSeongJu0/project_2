@@ -82,7 +82,7 @@ header {
 }
 
 /* 로고 이미지 무한 회전 */
-.smallimg .logo1 {
+.smallimg a .logo1 {
     animation: rotate_logo 6s linear infinite;
     transform-origin: 50% 50%;
 }
