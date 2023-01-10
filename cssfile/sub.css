@@ -97,7 +97,10 @@
 #wrap #intro {
     width: 100%;
     height: auto;
-    background-color: #333;
+    background-color: rgb(17, 17, 17);
+    background-image: url('../subimg/bgi.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
 }
 
 #wrap #intro .container {
@@ -118,7 +121,6 @@
 #wrap #intro .container .passion .pas_1 {
     width: 55%;
     height: 300px;
-    background-color: aquamarine;
     box-sizing: border-box;
     padding: 15px;
 }
@@ -152,7 +154,6 @@
     border-radius: 20px;
     border: 2px solid red;
     padding: 15px;
-    background-color: silver;
 }
 
 #wrap #intro .container .passion .pas_1 .abtn .abtn_1:hover {
@@ -170,6 +171,7 @@
 #wrap #intro .container .passion .pas_2 img {
     width: 100%;
     height: 400px;
+    border-radius: 15px;
 }
 
 #wrap #intro .container .passion .pas_2 .circle {
@@ -243,7 +245,7 @@
 #wrap #pro {
     width: 100%;
     height: auto;
-    background-color: aqua;
+    background-color: rgb(14, 14, 14);
 }
 
 #wrap #pro .container {
@@ -266,7 +268,6 @@
 #wrap #pro .container .choose .why {
     width: 100%;
     height: 50px;
-    background-color: darkkhaki;
     text-align: center;
 }
 
@@ -279,7 +280,6 @@
 #wrap #pro .container .choose .tech {
     width: 100%;
     height: 500px;
-    background-color: brown;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -312,6 +312,7 @@
 
 #wrap #pro .container .choose .tech .tech_1 .intro h4:hover {
     color: red;
+    transition: all 0.7s ease-in;
 }
 
 #wrap #pro .container .choose .tech .tech_1 .intro p     {
@@ -348,7 +349,10 @@
 #wrap #Team {
     width: 100%;
     height: auto;
-    background-color: blanchedalmond;
+    background-color: rgb(17, 17, 17);
+    background-image: url('../subimg/bgi2.png');
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
 #wrap #Team .container {
@@ -371,7 +375,6 @@
     width: 100%;
     height: 50px;
     text-align: center;
-    background-color: darkkhaki;
 }
 
 #wrap #Team .container .team .our h2 {
@@ -434,7 +437,10 @@
 #wrap #MAP {
     width: 100%;
     height: auto;
-    background-color: cornflowerblue;
+    background-color: rgb(14, 14, 14);
+    background-image: url('../subimg/bgi1.png');
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 
 #wrap #MAP .container {
@@ -447,7 +453,6 @@
 #wrap #MAP .container .google {
     width: 100%;
     height: 600px;
-    background-color: #f56c60;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -463,7 +468,6 @@
 #wrap #MAP .container .google .ibtn_form {
     width: 100%;
     height: 450px;
-    background-color: cadetblue;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -472,7 +476,6 @@
 #wrap #MAP .container .google .ibtn_form .form_1 {
     width: 20%;
     height: 400px;
-    background-color: chocolate;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -505,11 +508,11 @@
 #wrap #MAP .container .google .ibtn_form .form_1 .btn button {
     width: 75px;
     height: 45px;
-    background-color: silver;
-    color: white;
-    border: 1px solid black;
+    border: 1px solid red;
     border-radius: 15px;
     text-transform: uppercase;
+    background-color: transparent;
+    color: white;
 }
 
 #wrap #MAP .container .google .ibtn_form .form_1 .btn button.on {
@@ -662,7 +665,7 @@
     #wrap #intro {
         width: 100%;
         height: auto;
-        background-color: #333;
+        background-color: rgb(17, 17, 17);
     }
     
     #wrap #intro .container {
@@ -684,7 +687,6 @@
     #wrap #intro .container .passion .pas_1 {
         width: 65%;
         height: 50vw;
-        background-color: aquamarine;
         box-sizing: border-box;
         padding: 10px;
     }
@@ -718,7 +720,6 @@
         border-radius: 20px;
         border: 2px solid red;
         padding: 3px;
-        background-color: silver;
     }
     
     #wrap #intro .container .passion .pas_1 .abtn .abtn_1:hover {
@@ -736,6 +737,7 @@
     #wrap #intro .container .passion .pas_2 img {
         width: 100%;
         height: 45vw;
+        border-radius: 15px;
     }
     
     #wrap #intro .container .passion .pas_2 .circle {
@@ -809,7 +811,7 @@
     #wrap #pro {
         width: 100%;
         height: auto;
-        background-color: aqua;
+        background-color: rgb(14, 14, 14);
     }
     
     #wrap #pro .container {
@@ -844,7 +846,6 @@
     #wrap #pro .container .choose .tech {
         width: 100%;
         height: 175vw;
-        background-color: brown;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -879,6 +880,7 @@
 
     #wrap #pro .container .choose .tech .tech_1 .intro h4:hover {
         color: red;
+        transition: all 0.7s ease-in;
     }
     
     #wrap #pro .container .choose .tech .tech_1 .intro p     {
@@ -916,7 +918,7 @@
     #wrap #Team {
         width: 100%;
         height: auto;
-        background-color: blanchedalmond;
+        background-color: rgb(17, 17, 17);
     }
     
     #wrap #Team .container {
@@ -929,7 +931,6 @@
     #wrap #Team .container .team {
         width: 100%;
         height: 160vh;
-        background-color: #b63580;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -940,7 +941,6 @@
         width: 100%;
         height: 30px;
         text-align: center;
-        background-color: darkkhaki;
     }
     
     #wrap #Team .container .team .our h2 {
@@ -952,7 +952,6 @@
     #wrap #Team .container .team .Num1 {
         width: 85%;
         height: 150vh;
-        background-color: aqua;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -1008,7 +1007,7 @@
     #wrap #MAP {
         width: 100%;
         height: auto;
-        background-color: cornflowerblue;
+        background-color: rgb(14, 14, 14);
     }
     
     #wrap #MAP .container {
@@ -1021,7 +1020,6 @@
     #wrap #MAP .container .google {
         width: 100%;
         height: 220vw;
-        background-color: #f56c60;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -1034,13 +1032,11 @@
         font-size: 2rem;
         font-weight: bold;
         text-align: center;
-        background-color: antiquewhite;
     }
     
     #wrap #MAP .container .google .ibtn_form {
         width: 85%;
         height: 200vw;
-        background-color: cadetblue;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -1050,7 +1046,6 @@
     #wrap #MAP .container .google .ibtn_form .form_1 {
         width: 65%;
         height: 86vw;
-        background-color: chocolate;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -1083,11 +1078,11 @@
     #wrap #MAP .container .google .ibtn_form .form_1 .btn button {
         width: 75px;
         height: 45px;
-        background-color: silver;
-        color: white;
-        border: 1px solid black;
+        border: 1px solid red;
         border-radius: 15px;
         text-transform: uppercase;
+        background-color: transparent;
+        color: white;
     }
     
     #wrap #MAP .container .google .ibtn_form .form_1 .btn button.on {
@@ -1136,7 +1131,7 @@
     
     #wrap #MAP .container .google .ibtn_form .map iframe {
         width: 100%;
-        height: 400px;
+        height: 100%;
         border-radius: 25px;
     }
 }
@@ -1240,7 +1235,7 @@
     #wrap #intro {
         width: 100%;
         height: auto;
-        background-color: #333;
+        background-color: rgb(17, 17, 17);
     }
     
     #wrap #intro .container {
@@ -1261,7 +1256,6 @@
     #wrap #intro .container .passion .pas_1 {
         width: 45%;
         height: 32vw;
-        background-color: aquamarine;
         box-sizing: border-box;
         padding: 15px;
     }
@@ -1295,7 +1289,6 @@
         border-radius: 20px;
         border: 2px solid red;
         padding: 10px;
-        background-color: silver;
     }
     
     #wrap #intro .container .passion .pas_1 .abtn .abtn_1:hover {
@@ -1313,6 +1306,7 @@
     #wrap #intro .container .passion .pas_2 img {
         width: 100%;
         height: 370px;
+        border-radius: 15px;
     }
     
     #wrap #intro .container .passion .pas_2 .circle {
@@ -1386,7 +1380,7 @@
     #wrap #pro {
         width: 100%;
         height: auto;
-        background-color: aqua;
+        background-color: rgb(14, 14, 14);
     }
     
     #wrap #pro .container {
@@ -1421,7 +1415,6 @@
     #wrap #pro .container .choose .tech {
         width: 100%;
         height: 50vw;
-        background-color: brown;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -1455,6 +1448,7 @@
 
     #wrap #pro .container .choose .tech .tech_1 .intro h4:hover {
         color: red;
+        transition: all 0.7s ease-in;
     }
     
     #wrap #pro .container .choose .tech .tech_1 .intro p     {
@@ -1491,7 +1485,7 @@
     #wrap #Team {
         width: 100%;
         height: auto;
-        background-color: blanchedalmond;
+        background-color: rgb(17, 17, 17);
     }
     
     #wrap #Team .container {
@@ -1504,7 +1498,6 @@
     #wrap #Team .container .team {
         width: 100%;
         height: 85vw;
-        background-color: #b63580;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -1515,7 +1508,6 @@
         width: 100%;
         height: 40px;
         text-align: center;
-        background-color: darkkhaki;
     }
     
     #wrap #Team .container .team .our h2 {
@@ -1527,7 +1519,6 @@
     #wrap #Team .container .team .Num1 {
         width: 85%;
         height: 72vw;
-        background-color: aqua;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -1549,8 +1540,8 @@
     }
     
     #wrap #Team .container .team .Num1 .human .img1 img {
-        width: 135px;
-        height: 135px;
+        width: 125px;
+        height: 125px;
         border-radius: 50%;
         margin: 10px 0;
     }
@@ -1582,7 +1573,7 @@
     #wrap #MAP {
         width: 100%;
         height: auto;
-        background-color: cornflowerblue;
+        background-color: rgb(14, 14, 14);
     }
     
     #wrap #MAP .container {
@@ -1595,7 +1586,6 @@
     #wrap #MAP .container .google {
         width: 100%;
         height: 75vw;
-        background-color: #f56c60;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -1608,13 +1598,11 @@
         font-size: 2.7rem;
         font-weight: bold;
         text-align: center;
-        background-color: antiquewhite;
     }
     
     #wrap #MAP .container .google .ibtn_form {
         width: 85%;
         height: 55vw;
-        background-color: cadetblue;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -1623,7 +1611,6 @@
     #wrap #MAP .container .google .ibtn_form .form_1 {
         width: 30%;
         height: 400px;
-        background-color: chocolate;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -1656,11 +1643,11 @@
     #wrap #MAP .container .google .ibtn_form .form_1 .btn button {
         width: 75px;
         height: 45px;
-        background-color: silver;
-        color: white;
-        border: 1px solid black;
+        border: 1px solid red;
         border-radius: 15px;
         text-transform: uppercase;
+        background-color: transparent;
+        color: white;
     }
     
     #wrap #MAP .container .google .ibtn_form .form_1 .btn button.on {
@@ -1813,7 +1800,7 @@
     #wrap #intro {
         width: 100%;
         height: auto;
-        background-color: #333;
+        background-color: rgb(17, 17, 17);
     }
     
     #wrap #intro .container {
@@ -1834,7 +1821,6 @@
     #wrap #intro .container .passion .pas_1 {
         width: 55%;
         height: 300px;
-        background-color: aquamarine;
         box-sizing: border-box;
         padding: 15px;
     }
@@ -1868,7 +1854,6 @@
         border-radius: 20px;
         border: 2px solid red;
         padding: 15px;
-        background-color: silver;
     }
     
     #wrap #intro .container .passion .pas_1 .abtn .abtn_1:hover {
@@ -1886,6 +1871,7 @@
     #wrap #intro .container .passion .pas_2 img {
         width: 100%;
         height: 400px;
+        border-radius: 15px;
     }
     
     #wrap #intro .container .passion .pas_2 .circle {
@@ -1959,7 +1945,7 @@
     #wrap #pro {
         width: 100%;
         height: auto;
-        background-color: aqua;
+        background-color: rgb(14, 14, 14);
     }
     
     #wrap #pro .container {
@@ -1982,7 +1968,6 @@
     #wrap #pro .container .choose .why {
         width: 100%;
         height: 50px;
-        background-color: darkkhaki;
         text-align: center;
     }
     
@@ -1995,14 +1980,13 @@
     #wrap #pro .container .choose .tech {
         width: 100%;
         height: 500px;
-        background-color: brown;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
     }
     
     #wrap #pro .container .choose .tech .tech_1 {
-        width: 30%;
+        width: 25%;
         height: 300px;
         background-color: black;
         display: flex;
@@ -2028,6 +2012,7 @@
     
     #wrap #pro .container .choose .tech .tech_1 .intro h4:hover {
         color: red;
+        transition: all 0.7s ease-in;
     }
     
     #wrap #pro .container .choose .tech .tech_1 .intro p     {
@@ -2064,7 +2049,7 @@
     #wrap #Team {
         width: 100%;
         height: auto;
-        background-color: blanchedalmond;
+        background-color: rgb(17, 17, 17);
     }
     
     #wrap #Team .container {
@@ -2087,7 +2072,6 @@
         width: 100%;
         height: 50px;
         text-align: center;
-        background-color: darkkhaki;
     }
     
     #wrap #Team .container .team .our h2 {
@@ -2105,7 +2089,7 @@
     }
     
     #wrap #Team .container .team .Num1 .human {
-        width: 190px;
+        width: 240px;
         height: 300px;
         text-align: center;
         box-sizing: border-box;
@@ -2150,7 +2134,7 @@
     #wrap #MAP {
         width: 100%;
         height: auto;
-        background-color: cornflowerblue;
+        background-color: rgb(14, 14, 14);
     }
     
     #wrap #MAP .container {
@@ -2163,7 +2147,6 @@
     #wrap #MAP .container .google {
         width: 100%;
         height: 600px;
-        background-color: #f56c60;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -2179,7 +2162,6 @@
     #wrap #MAP .container .google .ibtn_form {
         width: 100%;
         height: 450px;
-        background-color: cadetblue;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -2188,7 +2170,6 @@
     #wrap #MAP .container .google .ibtn_form .form_1 {
         width: 20%;
         height: 400px;
-        background-color: chocolate;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -2221,11 +2202,11 @@
     #wrap #MAP .container .google .ibtn_form .form_1 .btn button {
         width: 75px;
         height: 45px;
-        background-color: silver;
-        color: white;
-        border: 1px solid black;
+        border: 1px solid red;
         border-radius: 15px;
         text-transform: uppercase;
+        background-color: transparent;
+        color: white;
     }
     
     #wrap #MAP .container .google .ibtn_form .form_1 .btn button.on {
