@@ -564,8 +564,15 @@
 }
 
 #LightPainting .container .light .lt {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     position: relative;
     text-align: center;
+    margin: 0 auto;
 }
 
 #LightPainting .container .light .lt img {
@@ -604,7 +611,7 @@
 }
 
 #LightPainting .information form {
-    width: 100%;
+    width: 80%;
     height: 483px;
     text-align: center;
     display: flex;
