@@ -113,14 +113,18 @@
     position: relative;
 }
 
+#contents .contents .con1 {
+    position: relative;
+}
+
 #contents .contents .con1::after {
     position: absolute;
     content: "";
     width: 80px;
     height: 1px;
     background: red;
-    top: 230px;
-    right: 540px;
+    top: 52px;
+    right: 235px;
 }
 
 #contents .contents h2 {
