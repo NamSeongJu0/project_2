@@ -16,7 +16,7 @@ $(document).ready(function() {
         var s = event.pageX;
         var j = event.pageY;
         
-        $(this).find(".over").css({left: s -400 , top: j -1170}).addClass("on");
+        $(this).find(".over").css({left: s -320 , top: j -1170}).addClass("on");
     }).mouseleave(function() {
         $(".over").removeClass("on");
     });
@@ -25,7 +25,7 @@ $(document).ready(function() {
         var s = event.pageX;
         var j = event.pageY;
         console.log(s, j);
-        $(this).find(".over").css({left: s -1140 , top: j -1170}).addClass("on");
+        $(this).find(".over").css({left: s -900 , top: j -1170}).addClass("on");
     }).mouseleave(function() {
         $(".over").removeClass("on");
     });
@@ -34,7 +34,7 @@ $(document).ready(function() {
         var s = event.pageX;
         var j = event.pageY;
         console.log(s, j);
-        $(this).find(".over").css({left: s -1880, top: j -1170}).addClass("on");
+        $(this).find(".over").css({left: s -1490, top: j -1170}).addClass("on");
     }).mouseleave(function() {
         $(".over").removeClass("on");
     });
