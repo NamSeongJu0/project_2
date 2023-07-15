@@ -347,13 +347,15 @@
     color: #fff;
     text-align: center;
     line-height: 30px;
-    position: relative;
+    position: absolute;
     opacity: 0;
     transition: opacity 0.3s ease;
+    display: none;
 }
 
 .over.on {            
-    opacity: 0.8;            
+    opacity: 0.8;
+    display: block;           
 }
 
 #wrap #pro .container .choose .tech .tech_1 .circle2 .circle2_1 i {

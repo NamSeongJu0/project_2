@@ -12,64 +12,29 @@ $(function(){
 
 // pro circle2_1 mouse 효과
 $(document).ready(function() {
-    $(".choose .tech .tech_1:nth-of-type(1) .circle2 .circle2_1").mousemove(function(event) {
-        var s = event.pageX;
-        var j = event.pageY;
+    $('.tech .tech_1').each(function() {
+        var $p = $(this).find('p');
+        var $circle2_1 = $(this).find('.circle2 .circle2_1');
         
-        $(this).find(".over").css({left: s -320 , top: j -1170}).addClass("on");
-    }).mouseleave(function() {
-        $(".over").removeClass("on");
+        $p.hide();
+
+        $circle2_1.mouseenter(function() {
+            $p.stop().slideDown();
+        }).mouseleave(function() {
+            $p.stop().slideUp();
+        });
     });
 
-    $(".choose .tech .tech_1:nth-of-type(2) .circle2 .circle2_1").mousemove(function(event) {
-        var s = event.pageX;
-        var j = event.pageY;
-        console.log(s, j);
-        $(this).find(".over").css({left: s -900 , top: j -1170}).addClass("on");
-    }).mouseleave(function() {
-        $(".over").removeClass("on");
-    });
-
-    $(".choose .tech .tech_1:nth-of-type(3) .circle2 .circle2_1").mousemove(function(event) {
-        var s = event.pageX;
-        var j = event.pageY;
-        console.log(s, j);
-        $(this).find(".over").css({left: s -1490, top: j -1170}).addClass("on");
-    }).mouseleave(function() {
-        $(".over").removeClass("on");
+    $(".circle2_1").mousemove(function(event) {
+        var s = event.offsetX;
+        var j = event.offsetY;
+        
+        $(".over", this).css({left: s +30, top: j -10}).addClass("on");
+    }).on("mouseleave", function() {
+        $(".over", this).removeClass("on");
     });
 });
 
-// pro p 슬라이드
-$(function(){
-    $('.choose .tech .tech_1:nth-of-type(1) p').hide();
-
-    $('.choose .tech .tech_1:nth-of-type(1) .circle2 .circle2_1').hover(function(){
-        $('.choose .tech .tech_1:nth-of-type(1) p').stop().slideDown();
-    }, function(){
-        $('.choose .tech .tech_1:nth-of-type(1) p').stop().slideUp();
-    });  
-});
-
-$(function(){
-    $('.choose .tech .tech_1:nth-of-type(2) p').hide();
-
-    $('.choose .tech .tech_1:nth-of-type(2) .circle2 .circle2_1').hover(function(){
-        $('.choose .tech .tech_1:nth-of-type(2) p').stop().slideDown();
-    }, function(){
-        $('.choose .tech .tech_1:nth-of-type(2) p').stop().slideUp();
-    });  
-});
-
-$(function(){
-    $('.choose .tech .tech_1:nth-of-type(3) p').hide();
-
-    $('.choose .tech .tech_1:nth-of-type(3) .circle2 .circle2_1').hover(function(){
-        $('.choose .tech .tech_1:nth-of-type(3) p').stop().slideDown();
-    }, function(){
-        $('.choose .tech .tech_1:nth-of-type(3) p').stop().slideUp();
-    });  
-});
 
 
 // MAP 버튼 클릭 유도
